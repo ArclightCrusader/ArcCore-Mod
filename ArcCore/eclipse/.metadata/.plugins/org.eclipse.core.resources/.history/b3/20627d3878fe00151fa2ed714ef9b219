@@ -1,0 +1,11 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+
+public class ArmorNihil {
+
+	public ArmorNihil(int i, ArmorMaterial ArmorNihil, int j, int k, String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

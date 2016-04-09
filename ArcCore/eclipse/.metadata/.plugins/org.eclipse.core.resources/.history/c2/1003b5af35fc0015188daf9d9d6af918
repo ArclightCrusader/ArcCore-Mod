@@ -1,0 +1,8 @@
+package com.thearclightcrusader.proxy;
+
+public class ProxyCommon {
+	
+	public void registerRenderers(){
+		
+	}
+}
