@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.thearclightcrusader.ArcCore.BaxonAxe&apos; to &apos;BaconAxe&apos;&#x0D;&#x0A;- Original project: &apos;Minecraft&apos;&#x0D;&#x0A;- Original element: &apos;com.thearclightcrusader.ArcCore.BaxonAxe&apos;&#x0D;&#x0A;- Renamed element: &apos;com.thearclightcrusader.ArcCore.BaconAxe&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BaxonAxe&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.thearclightcrusader.ArcCore{BaxonAxe.java[BaxonAxe" matchStrategy="1" name="BaconAxe" qualified="false" references="true" similarDeclarations="false" stamp="1460302097263" textual="false" version="1.0"/>
+</session>

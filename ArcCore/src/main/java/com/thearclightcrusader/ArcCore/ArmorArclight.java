@@ -10,8 +10,8 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ArmorArclight extends ItemArmor{
 
-	public ArmorArclight(int i, ArmorMaterial arclight, int j, int k, String string) {
-		super(arclight, k, k);
+	public ArmorArclight(int i, ArmorMaterial Arclight, int j, int k, String string) {
+		super(Arclight, k, k);
 		
 	}
 	
