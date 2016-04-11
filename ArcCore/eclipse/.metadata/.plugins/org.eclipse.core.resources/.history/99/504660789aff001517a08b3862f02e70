@@ -23,7 +23,6 @@ public class WaterStaff extends Item{
 		this.setUnlocalizedName("WaterStaff");
 		
 	}
-		@Override
 		public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int w, int x, int y, int z, float xf, float zf, float yf){
 			return false;
 			
