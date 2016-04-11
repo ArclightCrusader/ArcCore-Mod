@@ -9,7 +9,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ArmorNihil extends ItemArmor{
 
-	public ArmorNihil(int i, ArmorMaterial ArmorNihil, int j, int k, String string) {
+	public ArmorNihil(ArmorMaterial ArmorNihil, int j, int k, String string) {
 		super(ArmorNihil, k, k);
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)

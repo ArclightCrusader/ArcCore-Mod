@@ -1,127 +1,36 @@
-[10:20:14] [main/INFO]: Setting user: Player687
-[10:20:15] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:20:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Arc Core
-[10:20:23] [Sound Library Loader/INFO]: Sound engine started
-[10:20:37] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[10:20:37] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[10:20:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Arc Core
-[10:20:38] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[10:20:38] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[10:20:39] [Sound Library Loader/INFO]: Sound engine started
-[10:20:51] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[10:20:51] [Server thread/INFO]: Generating keypair
-[10:21:25] [Server thread/INFO]: Preparing start region for level 0
-[10:21:26] [Server thread/INFO]: Changing view distance to 4, from 10
-[10:21:26] [Server thread/INFO]: Player687[local:E:5bedaf77] logged in with entity id 272 at (184.69999998807907, 75.0, 149.51994774009117)
-[10:21:26] [Server thread/INFO]: Player687 joined the game
-[10:21:39] [Server thread/INFO]: Player687 has just earned the achievement [Taking Inventory]
-[10:21:39] [Client thread/INFO]: [CHAT] Player687 has just earned the achievement [Taking Inventory]
-[10:21:40] [Server thread/INFO]: Saving and pausing game...
-[10:21:40] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:21:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:21:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:22:15] [Server thread/INFO]: Saving and pausing game...
-[10:22:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:22:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:22:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:22:46] [Server thread/INFO]: Saving and pausing game...
-[10:22:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:22:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:22:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:22:47] [Server thread/INFO]: Stopping server
-[10:22:47] [Server thread/INFO]: Saving players
-[10:22:47] [Server thread/INFO]: Saving worlds
-[10:22:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:22:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:22:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:22:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[10:22:49] [Server thread/INFO]: Generating keypair
-[10:22:49] [Server thread/INFO]: Preparing start region for level 0
-[10:22:49] [Server thread/INFO]: Changing view distance to 4, from 10
-[10:22:49] [Server thread/INFO]: Player687[local:E:f285b189] logged in with entity id 1079 at (189.4522316061959, 86.19815419868475, 149.66601826920387)
-[10:22:49] [Server thread/INFO]: Player687 joined the game
-[10:22:50] [Server thread/INFO]: Saving and pausing game...
-[10:22:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:22:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:22:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:23:11] [Client thread/WARN]: Failed to load texture: arccore:textures/armor/arclightArmor1.png
-java.io.FileNotFoundException: arccore:textures/armor/arclightArmor1.png
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:60) [Render.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:70) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:517) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:167) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:565) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
-	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:112) [GuiInventory.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:839) [GuiContainerCreative.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93) [GuiContainer.class:?]
-	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673) [GuiContainerCreative.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_31]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_31]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_31]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_31]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[10:23:12] [Client thread/WARN]: Failed to load texture: arccore:textures/armor/arclightArmor2.png
-java.io.FileNotFoundException: arccore:textures/armor/arclightArmor2.png
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:60) [Render.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:70) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:517) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:167) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:565) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
-	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:112) [GuiInventory.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:839) [GuiContainerCreative.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93) [GuiContainer.class:?]
-	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673) [GuiContainerCreative.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_31]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_31]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_31]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_31]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[10:23:19] [Server thread/INFO]: [Player687: Set own game mode to Survival Mode]
-[10:23:20] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[10:23:28] [Server thread/INFO]: [Player687: Set own game mode to Creative Mode]
-[10:23:28] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[10:25:12] [Server thread/INFO]: Saving and pausing game...
-[10:25:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:25:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:25:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:25:22] [Server thread/INFO]: Saving and pausing game...
-[10:25:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:25:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:25:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:25:22] [Server thread/INFO]: Stopping server
-[10:25:22] [Server thread/INFO]: Saving players
-[10:25:22] [Server thread/INFO]: Saving worlds
-[10:25:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:25:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:25:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:25:23] [Client thread/INFO]: Stopping!
+[18:11:35] [main/INFO]: Setting user: Player796
+[18:11:36] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:11:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Arc Core
+[18:11:41] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: ArcCore/ in C:\Users\Zach\Documents\GitHub\ArcCore-Mod\ArcCore\bin
+[18:11:42] [Sound Library Loader/INFO]: Sound engine started
+[18:11:50] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:11:50] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:11:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Arc Core
+[18:11:50] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: ArcCore/ in C:\Users\Zach\Documents\GitHub\ArcCore-Mod\ArcCore\bin
+[18:11:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:11:50] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:11:51] [Sound Library Loader/INFO]: Sound engine started
+[18:12:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:12:06] [Server thread/INFO]: Generating keypair
+[18:12:06] [Server thread/INFO]: Preparing start region for level 0
+[18:12:07] [Server thread/INFO]: Changing view distance to 4, from 10
+[18:12:07] [Server thread/INFO]: Player796[local:E:7c761482] logged in with entity id 273 at (200.3118408162012, 84.24985823546417, 155.18289790737143)
+[18:12:07] [Server thread/INFO]: Player796 joined the game
+[18:12:27] [Server thread/INFO]: Player796 has just earned the achievement [Taking Inventory]
+[18:12:27] [Client thread/INFO]: [CHAT] Player796 has just earned the achievement [Taking Inventory]
+[18:12:49] [Client thread/INFO]: [CHAT] There is no such item with ID NihilNlock
+[18:12:55] [Client thread/INFO]: [CHAT] There is no such item with ID NihilBlock
+[18:12:55] [Server thread/INFO]: Saving and pausing game...
+[18:12:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:12:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:12:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:13:20] [Client thread/INFO]: [CHAT] There is no such item with ID 90017
+[18:16:45] [Client thread/INFO]: Stopping!
+[18:16:45] [Server thread/INFO]: Stopping server
+[18:16:45] [Server thread/INFO]: Saving players
+[18:16:45] [Server thread/INFO]: Saving worlds
+[18:16:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:16:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:16:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:16:46] [Client Shutdown Thread/INFO]: Stopping server
+[18:16:46] [Client Shutdown Thread/INFO]: Saving players

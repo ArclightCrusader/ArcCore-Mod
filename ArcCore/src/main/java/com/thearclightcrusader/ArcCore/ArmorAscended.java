@@ -9,13 +9,13 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ArmorAscended extends ItemArmor{
 
-	public ArmorAscended(int i, ArmorMaterial ArmorAscended, int j, int k, String string) {
+	public ArmorAscended(ArmorMaterial ArmorAscended, int j, int k, String string) {
 		super(ArmorAscended, k, k);
 	}
 	
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
     {
-        if(stack.getItem() == Main.ascendedHelm || stack.getItem() == Main.ascendedChestplate || stack.getItem() == Main.ascendedBoots){
+        if(stack.getItem() == Main.ascendedHelm || stack.getItem() == Main.ascendedChest || stack.getItem() == Main.ascendedBoots){
         	return References.MODID + ":textures/armor/baconArmor1.png";
         }else if(stack.getItem() == Main.ascendedLegs){
         	return References.MODID + ":textures/armor/baconArmor2.png";

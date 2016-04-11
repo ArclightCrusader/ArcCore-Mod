@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class BaconRoot extends Item {
 
-	public BaconRoot(int i) {
+	public BaconRoot() {
 		this.setTextureName(References.MODID + ":BaconRoot");
 		this.setUnlocalizedName("Bacon Root");
 		this.setCreativeTab(CreativeTabs.tabMisc);

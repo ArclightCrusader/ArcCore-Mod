@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class EmeraldBacon extends Item {
 
-	public EmeraldBacon(int i) {
+	public EmeraldBacon() {
 		this.setTextureName(References.MODID + ":EmeraldBacon");
 		this.setUnlocalizedName("Emerald Encrusted Bacon");
 		this.setCreativeTab(CreativeTabs.tabMisc);

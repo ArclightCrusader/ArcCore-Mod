@@ -8,7 +8,7 @@ import net.minecraft.item.ItemFood;
 
 public class Bacon extends ItemFood {
 
-	public Bacon(int i, int j, boolean b) {
+	public Bacon(int j, boolean b) {
 		super(j, b);
 		this.setTextureName(References.MODID + ":RawBacon");
 		this.setUnlocalizedName("Raw Bacon");

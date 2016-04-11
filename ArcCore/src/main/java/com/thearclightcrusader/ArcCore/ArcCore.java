@@ -6,7 +6,7 @@ import com.thearclightcrusader.ArcCore.proxy.References;
 
 public class ArcCore extends Item {
 
-	public ArcCore(int i) {
+	public ArcCore() {
 		this.setTextureName(References.MODID + ":ArcCore");
 		this.setUnlocalizedName("Arc Core");
 	}

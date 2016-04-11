@@ -10,7 +10,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ArmorBacon extends ItemArmor{
 
-	public ArmorBacon(int i, ArmorMaterial ArmorBacon, int j, int k, String string) {
+	public ArmorBacon(ArmorMaterial ArmorBacon, int j, int k, String string) {
 		super(ArmorBacon, k, k);
 		
 	}

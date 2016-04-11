@@ -9,8 +9,24 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ArmorAbyss extends ItemArmor{
 
-	public ArmorAbyss(int i, ArmorMaterial ArmorAbyss, int j, int k, String string) {
-		super(ArmorAbyss, k, k);
+	public ArmorAbyss(ArmorMaterial ArmorAbyss, int j, int k, String string) {
+		super(ArmorAbyss, j, k);
+		
+
+		if (k == 0) {
+		    this.setTextureName(References.MODID + ":abyssal_helmet");
+	}
+		else if (k == 1) {
+			this.setTextureName(References.MODID + ":abyssal_chestplate");
+	}
+		else if (k == 2) {
+				this.setTextureName(References.MODID + ":abyssal_leggings");
+	}
+		else if (k == 3) {
+				this.setTextureName(References.MODID + ":abyssal_boots");
+		}
+			
+		
 	}
 
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)

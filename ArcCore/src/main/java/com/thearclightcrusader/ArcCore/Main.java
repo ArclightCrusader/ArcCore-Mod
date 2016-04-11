@@ -38,9 +38,11 @@ public class Main
     
     public static ToolMaterial ArclightTool = EnumHelper.addToolMaterial("ArclightTool", 5, 2500, 9, 5, 40);
     public static ToolMaterial BaconTool = EnumHelper.addToolMaterial("BaconTool", 4, 2000, 8, 5, 35);
-    public static ToolMaterial NihilTool = EnumHelper.addToolMaterial("NihilTool", 1, 25, 1, 0, 1);
+    public static ToolMaterial NihilTool = EnumHelper.addToolMaterial("NihilTool", 0, 25, 1, 0, 1);
     public static ToolMaterial AbyssalTool = EnumHelper.addToolMaterial("AbyssalTool", 5, 2250, 9, 7, 40);
     public static ToolMaterial AscendedTool = EnumHelper.addToolMaterial("ArclightTool", 5, 3000, 12, 9, 75);
+    
+    public static ToolMaterial StaffMaterial = EnumHelper.addToolMaterial("StaffMaterial", 0, 20, 1, 1, 1);
    
     
     //Blocks
@@ -49,31 +51,37 @@ public class Main
     public static Block baconLeaf;
     public static Block nihilBlock = new NihilBlock(90017, Material.rock);
     
-    public static Item baconHelm = new ArmorBacon(90005, ArmorBacon, 0, 0, "BaconHelm").setUnlocalizedName("BaconHelm").setTextureName(References.MODID + ":BaconHelm").setCreativeTab(CreativeTabs.tabCombat);;
-    public static Item baconChestplate = new ArmorBacon(90006, ArmorBacon, 0, 1, "BaconChest").setUnlocalizedName("BaconChest").setTextureName(References.MODID + ":BaconChestplate").setCreativeTab(CreativeTabs.tabCombat);;
-    public static Item baconLegs = new ArmorBacon(90007, ArmorBacon, 0, 2, "BaconLegs").setUnlocalizedName("BaconLegs").setTextureName(References.MODID + ":BaconLegs").setCreativeTab(CreativeTabs.tabCombat);;
-    public static Item baconBoots = new ArmorBacon(90008, ArmorBacon, 0, 3, "BaconBoots").setUnlocalizedName("BaconBoots").setTextureName(References.MODID + ":BaconBoots").setCreativeTab(CreativeTabs.tabCombat);;
+    //Machines
+    public static Block arcCoreInfuserIdle;
+    public static Block arcCoreInfuserActive;
     
-    public static Item ascendedHelm = new ArmorAscended(90018, ArmorAscended, 0, 0, "AscendedHelm").setUnlocalizedName("AscendedHelm").setTextureName(References.MODID + ":AscendedHelm").setCreativeTab(CreativeTabs.tabCombat);;
-    public static Item ascendedChestplate = new ArmorAscended(90019, ArmorAscended, 0, 1, "AscendedChest").setUnlocalizedName("AscendedChest").setTextureName(References.MODID + ":AscendedChestplate").setCreativeTab(CreativeTabs.tabCombat);;
-    public static Item ascendedLegs = new ArmorAscended(90020, ArmorAscended, 0, 2, "AscendedLegs").setUnlocalizedName("AscendedLegs").setTextureName(References.MODID + ":AscendedLegs").setCreativeTab(CreativeTabs.tabCombat);;
-    public static Item ascendedBoots = new ArmorAscended(90021, ArmorAscended, 0, 3, "AscendedBoots").setUnlocalizedName("AscendedBoots").setTextureName(References.MODID + ":AscendedBoots").setCreativeTab(CreativeTabs.tabCombat);;
+    //Armor
+    public static Item baconHelm = new ArmorBacon(ArmorBacon, 0, 0, "BaconHelm").setUnlocalizedName("BaconHelm").setTextureName(References.MODID + ":BaconHelm").setCreativeTab(CreativeTabs.tabCombat);;
+    public static Item baconChestplate = new ArmorBacon(ArmorBacon, 0, 1, "BaconChest").setUnlocalizedName("BaconChest").setTextureName(References.MODID + ":BaconChestplate").setCreativeTab(CreativeTabs.tabCombat);;
+    public static Item baconLegs = new ArmorBacon(ArmorBacon, 0, 2, "BaconLegs").setUnlocalizedName("BaconLegs").setTextureName(References.MODID + ":BaconLegs").setCreativeTab(CreativeTabs.tabCombat);;
+    public static Item baconBoots = new ArmorBacon(ArmorBacon, 0, 3, "BaconBoots").setUnlocalizedName("BaconBoots").setTextureName(References.MODID + ":BaconBoots").setCreativeTab(CreativeTabs.tabCombat);;
     
-    public static Item nihilHelm = new ArmorNihil(90022, ArmorNihil, 0, 0, "NihilHelm").setUnlocalizedName("NihilHelm").setTextureName(References.MODID + ":NihilHelm");
-    public static Item nihilChest = new ArmorNihil(90023, ArmorNihil, 0, 1, "NihlChest").setUnlocalizedName("NihilChest").setTextureName(References.MODID + ":NihilChestplate");
-    public static Item nihilLegs = new ArmorNihil(90024, ArmorNihil, 0, 2, "NihilLegs").setUnlocalizedName("NihilLegs").setTextureName(References.MODID + ":NihilLegs");
-    public static Item nihilBoots = new ArmorNihil(90025, ArmorNihil, 0, 3, "NihilBoots").setUnlocalizedName("NihilBoots").setTextureName(References.MODID + ":NihilBoots"); 
+    public static Item ascendedHelm = new ArmorAscended(ArmorAscended, 0, 0, "AscendedHelm").setUnlocalizedName("AscendedHelm").setTextureName(References.MODID + ":AscendedHelm").setCreativeTab(CreativeTabs.tabCombat);;
+    public static Item ascendedChest = new ArmorAscended(ArmorAscended, 0, 1, "AscendedChest").setUnlocalizedName("AscendedChest").setTextureName(References.MODID + ":AscendedChestplate").setCreativeTab(CreativeTabs.tabCombat);;
+    public static Item ascendedLegs = new ArmorAscended(ArmorAscended, 0, 2, "AscendedLegs").setUnlocalizedName("AscendedLegs").setTextureName(References.MODID + ":AscendedLegs").setCreativeTab(CreativeTabs.tabCombat);;
+    public static Item ascendedBoots = new ArmorAscended(ArmorAscended, 0, 3, "AscendedBoots").setUnlocalizedName("AscendedBoots").setTextureName(References.MODID + ":AscendedBoots").setCreativeTab(CreativeTabs.tabCombat);;
     
-    public static Item arclightHelm = new ArmorArclight(90026, Arclight, 0, 0, "ArclightHelm").setUnlocalizedName("ArclightHelm").setTextureName(References.MODID + ":ArclightHelm");
-    public static Item arclightChest = new ArmorArclight(90027, Arclight, 0, 1, "ArclightChest").setUnlocalizedName("ArclightChest").setTextureName(References.MODID + ":ArclightChestplate");
-    public static Item arclightLegs = new ArmorArclight(90028, Arclight, 0, 2, "ArclightLegs").setUnlocalizedName("ArclightLegs").setTextureName(References.MODID + ":ArclightLegs");
-    public static Item arclightBoots = new ArmorArclight(90029, Arclight, 0, 3, "ArclightBoots").setUnlocalizedName("ArclightBoots").setTextureName(References.MODID + ":ArclightBoots"); 
+    public static Item nihilHelm = new ArmorNihil(ArmorNihil, 0, 0, "NihilHelm").setUnlocalizedName("NihilHelm").setTextureName(References.MODID + ":NihilHelm");
+    public static Item nihilChest = new ArmorNihil(ArmorNihil, 0, 1, "NihlChest").setUnlocalizedName("NihilChest").setTextureName(References.MODID + ":NihilChestplate");
+    public static Item nihilLegs = new ArmorNihil(ArmorNihil, 0, 2, "NihilLegs").setUnlocalizedName("NihilLegs").setTextureName(References.MODID + ":NihilLegs");
+    public static Item nihilBoots = new ArmorNihil(ArmorNihil, 0, 3, "NihilBoots").setUnlocalizedName("NihilBoots").setTextureName(References.MODID + ":NihilBoots"); 
     
-    public static Item abyssalHelm = new ArmorAbyss(90030, ArmorAbyss, 0, 0, "AbyssalHelm").setUnlocalizedName("AbyssalHelm").setTextureName(References.MODID + ":AbyssalHelm");
-    public static Item abyssalChest = new ArmorAbyss(90031, ArmorAbyss, 0, 1, "AbyssalChest").setUnlocalizedName("AbyssalChest").setTextureName(References.MODID + ":AbyssalChestplate");
-    public static Item abyssalLegs = new ArmorAbyss(90032, ArmorAbyss, 0, 2, "AbyssalLegs").setUnlocalizedName("AbyssalLegs").setTextureName(References.MODID + ":AbyssalLegs");
-    public static Item abyssalBoots = new ArmorAbyss(90033, ArmorAbyss, 0, 3, "AbyssalBoots").setUnlocalizedName("AbyssalBoots").setTextureName(References.MODID + ":AbyssalBoots"); 
+    public static Item arclightHelm = new ArmorArclight(Arclight, 0, 0, "ArclightHelm").setUnlocalizedName("ArclightHelm").setTextureName(References.MODID + ":ArclightHelm");
+    public static Item arclightChest = new ArmorArclight(Arclight, 0, 1, "ArclightChest").setUnlocalizedName("ArclightChest").setTextureName(References.MODID + ":ArclightChestplate");
+    public static Item arclightLegs = new ArmorArclight(Arclight, 0, 2, "ArclightLegs").setUnlocalizedName("ArclightLegs").setTextureName(References.MODID + ":ArclightLegs");
+    public static Item arclightBoots = new ArmorArclight(Arclight, 0, 3, "ArclightBoots").setUnlocalizedName("ArclightBoots").setTextureName(References.MODID + ":ArclightBoots"); 
     
+    public static Item abyssalHelm = new ArmorAbyss(ArmorAbyss, 0, 0, "AbyssalHelm").setUnlocalizedName("AbyssalHelm").setTextureName(References.MODID + ":AbyssalHelm");
+    public static Item abyssalChest = new ArmorAbyss(ArmorAbyss, 0, 1, "AbyssalChest").setUnlocalizedName("AbyssalChest").setTextureName(References.MODID + ":AbyssalChestplate");
+    public static Item abyssalLegs = new ArmorAbyss(ArmorAbyss, 0, 2, "AbyssalLegs").setUnlocalizedName("AbyssalLegs").setTextureName(References.MODID + ":AbyssalLegs");
+    public static Item abyssalBoots = new ArmorAbyss(ArmorAbyss, 0, 3, "AbyssalBoots").setUnlocalizedName("AbyssalBoots").setTextureName(References.MODID + ":AbyssalBoots"); 
+    
+    //Tools
     public static Item baconSword = new BaconSword(BaconTool);
     public static Item baconPick = new BaconPick(BaconTool);
     public static Item baconAxe = new BaconAxe(BaconTool);
@@ -104,41 +112,87 @@ public class Main
     public static Item ascendedShovel = new AscendedShovel(AscendedTool);
     public static Item ascendedHoe = new AscendedHoe(AscendedTool);
     
-    public static Item baconRoot = new BaconRoot(90000);
-    public static Item emeraldBacon = new EmeraldBacon(90001);
-    public static Item bacon = new Bacon(90002, 1, false);
-    public static Item baconBeer = new BaconBeer(90003, 2, false);
-    public static Item baconCooked = new BaconCooked(90004, 6, false);
+    //Items
+    public static Item baconRoot = new BaconRoot();
+    public static Item emeraldBacon = new EmeraldBacon();
+    public static Item bacon = new Bacon(1, false);
+    public static Item baconBeer = new BaconBeer(2, false);
+    public static Item baconCooked = new BaconCooked(6, false);
+    public static Item arclightIngot = new ArclightIngot();
+    public static Item arcCore = new ArcCore();
+    public static Item protoArcCore = new PrototypeCore();
+    public static Item arcDiamond = new ArcDiamond();
     
-    public static Item arclightIngot = new ArclightIngot(90013);
-    public static Item arcCore = new ArcCore(90014);
-    public static Item protoArcCore = new PrototypeCore(90015);
+    //Staves
+    public static Item waterStaff = new WaterStaff();
     
     @EventHandler
     public void preInit(FMLInitializationEvent event)
     {
+    	
+    	
     	//Blocks
     	baconSapling = new BaconSapling().setBlockName("Sapling").setCreativeTab(CreativeTabs.tabDecorations);
     	baconLeaf = new BaconLeaf().setBlockName("Leaf").setCreativeTab(CreativeTabs.tabDecorations);
     	baconWood = new BaconWood().setBlockName("Log").setCreativeTab(CreativeTabs.tabBlock);
+    	arcCoreInfuserIdle = new ArcCoreInfuser(false).setBlockName("ArcCoreInfuserIdle").setCreativeTab(CreativeTabs.tabDecorations);
+    	arcCoreInfuserActive = new ArcCoreInfuser(true).setBlockName("ArcCoreInfuserActive").setLightLevel(0.625F);
+    	
 		//GameReg
     	GameRegistry.registerBlock(baconWood, ItemLogBlocks.class, baconWood.getUnlocalizedName().substring(5));
     	GameRegistry.registerBlock(baconLeaf, ItemLeafBlocks.class, baconLeaf.getUnlocalizedName().substring(5));
     	GameRegistry.registerBlock(baconSapling, ItemSaplingBlocks.class, baconSapling.getUnlocalizedName().substring(5));
+    	
+    	//Block Registry
     	GameRegistry.registerBlock(nihilBlock, "NihilBlock");
     	
+    	//Machine Registry
+    	GameRegistry.registerBlock(arcCoreInfuserIdle, "ArcCoreInfuserIdle");
+    	GameRegistry.registerBlock(arcCoreInfuserActive, "ArcCoreInfuserActive");
+    	
+    	//Item Registry
     	GameRegistry.registerItem(bacon, "Bacon");
     	GameRegistry.registerItem(baconRoot, "BaconRoot");
     	GameRegistry.registerItem(baconCooked, "CookedBacon");
     	GameRegistry.registerItem(emeraldBacon, "EmeraldEncrustedBacon");
     	GameRegistry.registerItem(baconBeer, "BaconBeer");
     	GameRegistry.registerItem(protoArcCore, "ProtoArcCore");
+    	GameRegistry.registerItem(arclightIngot, "ArclightIngot");
+    	GameRegistry.registerItem(arcCore, "ArcCore");
+    	GameRegistry.registerItem(arcDiamond, "ArcDiamond");
     	
+    	//Tool Registry
     	GameRegistry.registerItem(arclightSword, "ArclightSword");
+    	GameRegistry.registerItem(arclightPick, "ArclightPickaxe");
+    	GameRegistry.registerItem(arclightAxe, "ArclightAxe");
+    	GameRegistry.registerItem(arclightShovel, "ArclightShovel");
+    	GameRegistry.registerItem(arclightHoe, "ArclightHoe");
+    	
     	GameRegistry.registerItem(nihilSword, "FutileSword");
+    	GameRegistry.registerItem(nihilPick, "FutilePickaxe");
+    	GameRegistry.registerItem(nihilShovel, "FutileShovel");
+    	GameRegistry.registerItem(nihilAxe, "FutileAxe");
+    	GameRegistry.registerItem(nihilHoe, "FutileHoe");
+    	
     	GameRegistry.registerItem(baconSword, "BaconSword");
+    	GameRegistry.registerItem(baconPick, "BaconPickaxe");
+    	GameRegistry.registerItem(baconShovel, "BaconShovel");
+    	GameRegistry.registerItem(baconAxe, "BaconAxe");
+    	GameRegistry.registerItem(baconHoe, "BaconHoe");
     	
+    	GameRegistry.registerItem(abyssalSword, "AbyssalSword");
+    	GameRegistry.registerItem(abyssalPick, "AbyssalPickaxe");
+    	GameRegistry.registerItem(abyssalAxe, "AbyssalAxe");
+    	GameRegistry.registerItem(abyssalShovel, "AbyssalShovel");
+    	GameRegistry.registerItem(abyssalShovel, "AbyssalShovel");
     	
+    	GameRegistry.registerItem(ascendedSword, "AscendedSword");
+    	GameRegistry.registerItem(ascendedPick, "AscendedPickaxe");
+    	GameRegistry.registerItem(ascendedAxe, "AscendedAxe");
+    	GameRegistry.registerItem(ascendedShovel, "AscendedShovel");
+    	GameRegistry.registerItem(ascendedShovel, "AscendedShovel");
+    	
+    	//Armor Registry
     	GameRegistry.registerItem(baconHelm, "BaconHelm");
     	GameRegistry.registerItem(baconChestplate, "BaconChest");
     	GameRegistry.registerItem(baconLegs, "BaconLegs");
@@ -148,9 +202,21 @@ public class Main
     	GameRegistry.registerItem(arclightChest, "ArclightChest");
     	GameRegistry.registerItem(arclightLegs, "ArclightLegs");
     	GameRegistry.registerItem(arclightBoots, "ArclightBoots");
+
+    	GameRegistry.registerItem(ascendedHelm, "AscendedHelm");
+    	GameRegistry.registerItem(ascendedChest, "AscendedChest");
+    	GameRegistry.registerItem(ascendedLegs, "AscendedLegs");
+    	GameRegistry.registerItem(ascendedBoots, "AscendedBoots");
+
+    	GameRegistry.registerItem(nihilHelm, "NihilHelm");
+    	GameRegistry.registerItem(nihilChest, "NihilChest");
+    	GameRegistry.registerItem(nihilLegs, "NihilLegs");
+    	GameRegistry.registerItem(nihilBoots, "NihilBoots");
     	
-    	GameRegistry.registerItem(arclightIngot, "ArclightIngot");
-    	GameRegistry.registerItem(arcCore, "ArcCore");
+    	GameRegistry.registerItem(abyssalHelm, "AbyssalHelm");
+    	GameRegistry.registerItem(abyssalChest, "AbyssalChest");
+    	GameRegistry.registerItem(abyssalLegs, "AbyssalLegs");
+    	GameRegistry.registerItem(abyssalBoots, "AbyssalBoots");
     	
     	//Recipes
     	GameRegistry.addShapedRecipe(new ItemStack(Main.baconLeaf), " X ", "XYX", " X ", 'X', Items.emerald, 'Y', Blocks.leaves);

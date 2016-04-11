@@ -8,7 +8,7 @@ import net.minecraft.item.ItemFood;
 
 public class BaconBeer extends ItemFood {
 
-	public BaconBeer(int i, int j, boolean b) {
+	public BaconBeer(int j, boolean b) {
 		super(j, b);
 		this.setTextureName(References.MODID + ":BaconBeer");
 		this.setUnlocalizedName("Bacon Beer");

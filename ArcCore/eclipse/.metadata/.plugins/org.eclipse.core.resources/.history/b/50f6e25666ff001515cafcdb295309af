@@ -1,0 +1,11 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.item.Item;
+
+public class WaterStaff extends Item {
+
+	public WaterStaff(int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

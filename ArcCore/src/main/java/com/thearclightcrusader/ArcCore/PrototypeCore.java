@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 
 public class PrototypeCore extends Item {
 
-	public PrototypeCore(int i) {
+	public PrototypeCore() {
 		this.setTextureName(References.MODID + "PrototypeCore");
 		this.setUnlocalizedName("protoArcCore");
 	}

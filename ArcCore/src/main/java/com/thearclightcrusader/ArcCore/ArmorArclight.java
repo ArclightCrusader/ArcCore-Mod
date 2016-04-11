@@ -10,8 +10,22 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ArmorArclight extends ItemArmor{
 
-	public ArmorArclight(int i, ArmorMaterial Arclight, int j, int k, String string) {
-		super(Arclight, k, k);
+	public ArmorArclight(ArmorMaterial Arclight, int j, int k, String string) {
+		super(Arclight, j, k);
+		
+		if (k == 0) {
+		    this.setTextureName(References.MODID + ":arclight_helmet");
+	}
+		else if (k == 1) {
+			this.setTextureName(References.MODID + ":arclight_chestplate");
+	}
+		else if (k == 2) {
+				this.setTextureName(References.MODID + ":arclight_leggings");
+	}
+		else if (k == 3) {
+				this.setTextureName(References.MODID + ":arclight_boots");
+		}
+			
 		
 	}
 	

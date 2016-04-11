@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class ArclightIngot extends Item {
 
-	public ArclightIngot(int i) {
+	public ArclightIngot() {
 		this.setTextureName(References.MODID + ":ArclightIngot");
 		this.setUnlocalizedName("Arclight Ingot");
 	}
