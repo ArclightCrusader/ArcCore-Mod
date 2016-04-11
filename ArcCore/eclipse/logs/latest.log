@@ -1,36 +1,31 @@
-[18:11:35] [main/INFO]: Setting user: Player796
-[18:11:36] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:11:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Arc Core
-[18:11:41] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: ArcCore/ in C:\Users\Zach\Documents\GitHub\ArcCore-Mod\ArcCore\bin
-[18:11:42] [Sound Library Loader/INFO]: Sound engine started
-[18:11:50] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:11:50] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:11:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Arc Core
-[18:11:50] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: ArcCore/ in C:\Users\Zach\Documents\GitHub\ArcCore-Mod\ArcCore\bin
-[18:11:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:11:50] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:11:51] [Sound Library Loader/INFO]: Sound engine started
-[18:12:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:12:06] [Server thread/INFO]: Generating keypair
-[18:12:06] [Server thread/INFO]: Preparing start region for level 0
-[18:12:07] [Server thread/INFO]: Changing view distance to 4, from 10
-[18:12:07] [Server thread/INFO]: Player796[local:E:7c761482] logged in with entity id 273 at (200.3118408162012, 84.24985823546417, 155.18289790737143)
-[18:12:07] [Server thread/INFO]: Player796 joined the game
-[18:12:27] [Server thread/INFO]: Player796 has just earned the achievement [Taking Inventory]
-[18:12:27] [Client thread/INFO]: [CHAT] Player796 has just earned the achievement [Taking Inventory]
-[18:12:49] [Client thread/INFO]: [CHAT] There is no such item with ID NihilNlock
-[18:12:55] [Client thread/INFO]: [CHAT] There is no such item with ID NihilBlock
-[18:12:55] [Server thread/INFO]: Saving and pausing game...
-[18:12:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:12:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:12:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:13:20] [Client thread/INFO]: [CHAT] There is no such item with ID 90017
-[18:16:45] [Client thread/INFO]: Stopping!
-[18:16:45] [Server thread/INFO]: Stopping server
-[18:16:45] [Server thread/INFO]: Saving players
-[18:16:45] [Server thread/INFO]: Saving worlds
-[18:16:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:16:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:16:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:16:46] [Client Shutdown Thread/INFO]: Stopping server
-[18:16:46] [Client Shutdown Thread/INFO]: Saving players
+[06:36:33] [main/INFO]: Setting user: Player593
+[06:36:33] [Client thread/INFO]: LWJGL Version: 2.9.1
+[06:36:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[06:36:39] [Sound Library Loader/INFO]: Sound engine started
+[06:36:42] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[06:36:42] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[06:36:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[06:36:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[06:36:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[06:36:43] [Sound Library Loader/INFO]: Sound engine started
+[06:37:00] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[06:37:00] [Server thread/INFO]: Generating keypair
+[06:37:16] [Server thread/INFO]: Preparing start region for level 0
+[06:37:17] [Server thread/INFO]: Changing view distance to 4, from 10
+[06:37:17] [Server thread/INFO]: Player593[local:E:b2c61387] logged in with entity id 267 at (204.49288541022005, 81.904149094818, 152.93669958278795)
+[06:37:17] [Server thread/INFO]: Player593 joined the game
+[06:37:21] [Server thread/INFO]: Player593 has just earned the achievement [Taking Inventory]
+[06:37:21] [Client thread/INFO]: [CHAT] Player593 has just earned the achievement [Taking Inventory]
+[06:40:32] [Server thread/INFO]: [Player593: Set own game mode to Survival Mode]
+[06:40:32] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[06:40:42] [Server thread/INFO]: Saving and pausing game...
+[06:40:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[06:40:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[06:40:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[06:40:42] [Server thread/INFO]: Stopping server
+[06:40:42] [Server thread/INFO]: Saving players
+[06:40:42] [Server thread/INFO]: Saving worlds
+[06:40:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[06:40:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[06:40:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[06:40:43] [Client thread/INFO]: Stopping!
