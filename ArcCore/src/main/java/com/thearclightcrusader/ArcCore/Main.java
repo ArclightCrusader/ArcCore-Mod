@@ -52,8 +52,12 @@ public class Main
     public static Block nihilBlock = new NihilBlock(90017, Material.rock);
     
     //Machines
+    public static Block arcCoreFurnaceIdle;
+    public static Block arcCoreFurnaceActive;
+    
     public static Block arcCoreInfuserIdle;
     public static Block arcCoreInfuserActive;
+    public static final int getIDArcCoreInfuser = 1;
     
     //Armor
     public static Item baconHelm = new ArmorBacon(ArmorBacon, 0, 0, "BaconHelm").setUnlocalizedName("BaconHelm").setTextureName(References.MODID + ":BaconHelm").setCreativeTab(CreativeTabs.tabCombat);;
@@ -124,7 +128,7 @@ public class Main
     public static Item arcDiamond = new ArcDiamond();
     
     //Staves
-    public static Item waterStaff = new WaterStaff();
+    public static Item waterTalisman = new WaterTalisman();
     
     @EventHandler
     public void preInit(FMLInitializationEvent event)
@@ -135,8 +139,10 @@ public class Main
     	baconSapling = new BaconSapling().setBlockName("Sapling").setCreativeTab(CreativeTabs.tabDecorations);
     	baconLeaf = new BaconLeaf().setBlockName("Leaf").setCreativeTab(CreativeTabs.tabDecorations);
     	baconWood = new BaconWood().setBlockName("Log").setCreativeTab(CreativeTabs.tabBlock);
-    	arcCoreInfuserIdle = new ArcCoreInfuser(false).setBlockName("ArcCoreInfuserIdle").setCreativeTab(CreativeTabs.tabDecorations);
-    	arcCoreInfuserActive = new ArcCoreInfuser(true).setBlockName("ArcCoreInfuserActive").setLightLevel(0.625F);
+    	arcCoreFurnaceIdle = new ArcCoreFurnace(false).setBlockName("ArcCoreFurnaceIdle").setCreativeTab(CreativeTabs.tabDecorations);
+    	arcCoreFurnaceActive = new ArcCoreFurnace(true).setBlockName("ArcCoreFurnaceActive").setLightLevel(0.625F);
+    	arcCoreInfuserIdle = new ArcCoreInfuser(false).setBlockName("ArcCoreInfuserIdle").setCreativeTab(CreativeTabs.tabDecorations).setHardness(3.5F);
+    	arcCoreFurnaceActive = new ArcCoreInfuser(true).setBlockName("ArcCoreInfuserActive").setLightLevel(0.625F).setHardness(3.5F);
     	
 		//GameReg
     	GameRegistry.registerBlock(baconWood, ItemLogBlocks.class, baconWood.getUnlocalizedName().substring(5));
@@ -147,8 +153,11 @@ public class Main
     	GameRegistry.registerBlock(nihilBlock, "NihilBlock");
     	
     	//Machine Registry
+    	GameRegistry.registerBlock(arcCoreFurnaceIdle, "ArcCoreFurnaceIdle");
+    	GameRegistry.registerBlock(arcCoreFurnaceActive, "ArcCoreFurnaceActive");
+    	
     	GameRegistry.registerBlock(arcCoreInfuserIdle, "ArcCoreInfuserIdle");
-    	GameRegistry.registerBlock(arcCoreInfuserActive, "ArcCoreInfuserActive");
+    	//GameRegistry.registerBlock(arcCoreInfuserActive, "ArcCoreInfuserActive");
     	
     	//Item Registry
     	GameRegistry.registerItem(bacon, "Bacon");
@@ -160,6 +169,7 @@ public class Main
     	GameRegistry.registerItem(arclightIngot, "ArclightIngot");
     	GameRegistry.registerItem(arcCore, "ArcCore");
     	GameRegistry.registerItem(arcDiamond, "ArcDiamond");
+    	GameRegistry.registerItem(waterTalisman, "WaterTalisman");
     	
     	//Tool Registry
     	GameRegistry.registerItem(arclightSword, "ArclightSword");

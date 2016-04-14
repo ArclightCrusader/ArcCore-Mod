@@ -1,0 +1,24 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+
+public class GuiArcCoreInfuser extends GuiContainer{
+
+	public GuiArcCoreInfuser(InventoryPlayer invPlayer, TileEntityArcCoreInfuser teArcCore) {
+		super(new ContainerArcCoreInfuser(invPlayer, teArcCore));
+		
+	}
+	
+	protected void drawGuiContainerForegroundLayer(int i, int j){
+		
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_) {
+		
+		
+	}
+
+}

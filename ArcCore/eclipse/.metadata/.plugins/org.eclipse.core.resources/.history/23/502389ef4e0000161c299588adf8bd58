@@ -1,0 +1,45 @@
+package com.thearclightcrusader.ArcCore;
+
+import com.thearclightcrusader.ArcCore.proxy.References;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import scala.collection.concurrent.Debug;
+
+public class WaterTalisman extends Item{
+
+	public WaterTalisman(){
+		
+		this.setTextureName(References.MODID + ":WaterTalisman");
+		this.setUnlocalizedName("WaterTalisman");
+		this.setCreativeTab(CreativeTabs.tabTools);
+		
+	}
+		
+		@Override
+		public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ) {
+			if(world.getBlock(x, y, z) == Main.nihilBlock && itemStack == new ItemStack(Main.waterTalisman)){
+				
+				//EntityCow entityCow = new EntityCow(world);
+				
+				//world.spawnEntityInWorld(entityCow);
+				Debug.log("Working!");
+			}
+			return true;
+			
+		
+			
+		}
+
+	}
+
+
+
+		
+	
+
+
