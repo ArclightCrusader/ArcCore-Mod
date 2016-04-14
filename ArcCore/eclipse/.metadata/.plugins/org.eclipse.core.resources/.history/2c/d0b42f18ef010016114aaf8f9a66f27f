@@ -1,0 +1,8 @@
+package com.thearclightcrusader.ArcCore.tileEntity;
+
+import net.minecraft.inventory.IInventory;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityArcCoreFurnace extends TileEntity implements IInventory{
+
+}

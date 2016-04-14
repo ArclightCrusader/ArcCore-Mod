@@ -1,8 +1,0 @@
-package com.gildedgam3r.bacontreemod.Proxy;
-
-public class ProxyCommon {
-	
-	public void registerRenderers(){
-		
-	}
-}

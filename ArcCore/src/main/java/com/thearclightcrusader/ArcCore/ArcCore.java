@@ -9,6 +9,7 @@ public class ArcCore extends Item {
 	public ArcCore() {
 		this.setTextureName(References.MODID + ":ArcCore");
 		this.setUnlocalizedName("Arc Core");
+		this.setCreativeTab(Main.arcCoreTab);
 	}
 
 }

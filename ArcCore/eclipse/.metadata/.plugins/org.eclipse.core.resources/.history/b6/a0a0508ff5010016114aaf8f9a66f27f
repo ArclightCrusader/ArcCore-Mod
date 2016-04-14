@@ -1,0 +1,15 @@
+package com.thearclightcrusader.ArcCore.tileEntity;
+
+import net.minecraft.inventory.IInventory;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityArcCoreFurnace extends TileEntity {
+
+	private String localizedName;
+	
+	public void setGuiDisplayName(String displayName) {
+		this.localizedName = displayName;
+		
+	}
+
+}

@@ -1,4 +1,4 @@
-itemGroup.bacontree=bacontree
+itemGroup.arccore=Arc Core
 
 tile.Log.bacon.name=Bacon Wood
 item.Emerald Encrusted Bacon.name=Emerald Encrusted Bacon
@@ -9,6 +9,8 @@ item.Cooked Bacon.name=Cooked Bacon
 tile.Leaf.Bacon.name=Emerald Leaf
 tile.Sapling.Bacon.name=Bacon Sapling
 tile.NihilBlock.name=Nihil Block
+tile.ArcCoreInfuserIdle.name=Arc Core Infuser
+tile.ArcCoreInfuserActive.name=Arc Core Infuser
 item.BaconHelm.name=Emerald Encrusted Bacon Helmet
 item.BaconChest.name=Emerald Encrusted Bacon Chestpalte
 item.BaconLegs.name=Emerald Encrusted Bacon Leggings

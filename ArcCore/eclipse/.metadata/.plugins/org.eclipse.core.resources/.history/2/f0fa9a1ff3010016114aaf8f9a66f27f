@@ -1,0 +1,25 @@
+package com.thearclightcrusader.ArcCore.gui;
+
+import com.thearclightcrusader.ArcCore.tileEntity.TileEntityArcCoreFurnace;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+
+public class GuiArcCoreFurnace extends GuiContainer {
+	
+	public TileEntityArcCoreFurnace teArcCoreF;
+
+	public GuiArcCoreFurnace(InventoryPlayer inventoryPlayer, TileEntityArcCoreFurnace entity) {
+		super(ContainerArcCoreFurnace(inventoryPlayer, entity));
+		
+		this.teArcCoreF = entity;
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
