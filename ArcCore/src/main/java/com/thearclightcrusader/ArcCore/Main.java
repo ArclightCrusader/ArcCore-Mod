@@ -7,6 +7,7 @@ import com.thearclightcrusader.ArcCore.armor.ArmorBacon;
 import com.thearclightcrusader.ArcCore.armor.ArmorNihil;
 import com.thearclightcrusader.ArcCore.blocks.ArcCoreFurnace;
 import com.thearclightcrusader.ArcCore.blocks.ArcCoreInfuser;
+import com.thearclightcrusader.ArcCore.blocks.ArcCoreLamp;
 import com.thearclightcrusader.ArcCore.blocks.BaconLeaf;
 import com.thearclightcrusader.ArcCore.blocks.BaconSapling;
 import com.thearclightcrusader.ArcCore.blocks.BaconWood;
@@ -18,14 +19,19 @@ import com.thearclightcrusader.ArcCore.items.Bacon;
 import com.thearclightcrusader.ArcCore.items.BaconBeer;
 import com.thearclightcrusader.ArcCore.items.BaconCooked;
 import com.thearclightcrusader.ArcCore.items.BaconRoot;
+import com.thearclightcrusader.ArcCore.items.CalciumAcetate;
 import com.thearclightcrusader.ArcCore.items.EmeraldBacon;
+import com.thearclightcrusader.ArcCore.items.FuelGel;
 import com.thearclightcrusader.ArcCore.items.ItemLeafBlocks;
 import com.thearclightcrusader.ArcCore.items.ItemLogBlocks;
 import com.thearclightcrusader.ArcCore.items.ItemSaplingBlocks;
+import com.thearclightcrusader.ArcCore.items.OrganicFuelGel;
 import com.thearclightcrusader.ArcCore.items.PrototypeCore;
+import com.thearclightcrusader.ArcCore.items.SurvivalistFuelGel;
 import com.thearclightcrusader.ArcCore.items.WaterTalisman;
 import com.thearclightcrusader.ArcCore.proxy.*;
 import com.thearclightcrusader.ArcCore.tileEntity.TileEntityArcCoreFurnace;
+import com.thearclightcrusader.ArcCore.tileEntity.TileEntityArcCoreInfuser;
 import com.thearclightcrusader.ArcCore.tools.AbyssalAxe;
 import com.thearclightcrusader.ArcCore.tools.AbyssalHoe;
 import com.thearclightcrusader.ArcCore.tools.AbyssalPick;
@@ -98,17 +104,24 @@ public class Main
     
     public static ToolMaterial ArclightTool = EnumHelper.addToolMaterial("ArclightTool", 5, 2500, 9, 5, 40);
     public static ToolMaterial BaconTool = EnumHelper.addToolMaterial("BaconTool", 4, 2000, 8, 5, 35);
-    public static ToolMaterial NihilTool = EnumHelper.addToolMaterial("NihilTool", 0, 25, 1, 0, 1);
+    public static ToolMaterial NihilTool = EnumHelper.addToolMaterial("NihilTool", 0, 15, 0, 0, 1);
     public static ToolMaterial AbyssalTool = EnumHelper.addToolMaterial("AbyssalTool", 5, 2250, 9, 7, 40);
     public static ToolMaterial AscendedTool = EnumHelper.addToolMaterial("ArclightTool", 5, 3000, 12, 9, 75);
     
     public static ToolMaterial StaffMaterial = EnumHelper.addToolMaterial("StaffMaterial", 0, 20, 1, 1, 1);
    
+    //Fuel
+    public static Item calciumAcetate = new CalciumAcetate();
+    public static Item fuelGel = new FuelGel();
+    public static Item survivalistFuelGel = new SurvivalistFuelGel();
+    public static Item organicFuelGel = new OrganicFuelGel();
     
     //Blocks
     public static Block baconSapling;
     public static Block baconWood;
     public static Block baconLeaf;
+    public static Block arcCoreLampOff;
+    public static Block arcCoreLampOn;
     public static Block nihilBlock = new NihilBlock(90017, Material.rock);
     
     //Machines
@@ -200,10 +213,12 @@ public class Main
     	baconSapling = new BaconSapling().setBlockName("Sapling").setCreativeTab(Main.arcCoreTab);
     	baconLeaf = new BaconLeaf().setBlockName("Leaf").setCreativeTab(Main.arcCoreTab);
     	baconWood = new BaconWood().setBlockName("Log").setCreativeTab(Main.arcCoreTab);
-    	arcCoreFurnaceIdle = new ArcCoreFurnace(false).setBlockName("ArcCoreFurnaceIdle").setCreativeTab(Main.arcCoreTab);
-    	arcCoreFurnaceActive = new ArcCoreFurnace(true).setBlockName("ArcCoreFurnaceActive").setLightLevel(0.625F);
+    	arcCoreFurnaceIdle = new ArcCoreFurnace(false).setBlockName("ArcCoreFurnaceIdle").setCreativeTab(Main.arcCoreTab).setHardness(3.5F);
+    	arcCoreFurnaceActive = new ArcCoreFurnace(true).setBlockName("ArcCoreFurnaceActive").setLightLevel(0.625F).setHardness(3.5F);
     	arcCoreInfuserIdle = new ArcCoreInfuser(false).setBlockName("ArcCoreInfuserIdle").setCreativeTab(Main.arcCoreTab).setHardness(3.5F);
     	arcCoreInfuserActive = new ArcCoreInfuser(true).setBlockName("ArcCoreInfuserActive").setLightLevel(0.625F).setHardness(3.5F);
+    	arcCoreLampOff = new ArcCoreLamp(false).setBlockName("ArcCoreLampOff").setCreativeTab(Main.arcCoreTab);
+    	arcCoreLampOn = new ArcCoreLamp(true).setBlockName("ArcCoreLampOn");
     	
 		//GameReg
     	GameRegistry.registerBlock(baconWood, ItemLogBlocks.class, baconWood.getUnlocalizedName().substring(5));
@@ -212,6 +227,8 @@ public class Main
     	
     	//Block Registry
     	GameRegistry.registerBlock(nihilBlock, "NihilBlock");
+    	GameRegistry.registerBlock(arcCoreLampOff, "ArcCoreLampOff");
+    	GameRegistry.registerBlock(arcCoreLampOn, "ArcCoreLampOn");
     	
     	//Machine Registry
     	GameRegistry.registerBlock(arcCoreFurnaceIdle, "ArcCoreFurnaceIdle");
@@ -231,6 +248,12 @@ public class Main
     	GameRegistry.registerItem(arcCore, "ArcCore");
     	GameRegistry.registerItem(arcDiamond, "ArcDiamond");
     	GameRegistry.registerItem(waterTalisman, "WaterTalisman");
+    	
+    	//Fuel
+    	GameRegistry.registerItem(calciumAcetate, "CalciumAcetate");
+    	GameRegistry.registerItem(fuelGel, "FuelGel");
+    	GameRegistry.registerItem(survivalistFuelGel, "SurvivalistFuelGel");
+    	GameRegistry.registerItem(organicFuelGel, "OrganicFuelGel");
     	
     	//Tool Registry
     	GameRegistry.registerItem(arclightSword, "ArclightSword");
@@ -289,14 +312,6 @@ public class Main
     	GameRegistry.registerItem(abyssalLegs, "AbyssalLegs");
     	GameRegistry.registerItem(abyssalBoots, "AbyssalBoots");
     	
-    }
-    
-    @EventHandler 
-    public void Init(FMLInitializationEvent event){
-    	
-    	GameRegistry.registerTileEntity(TileEntityArcCoreFurnace.class, "ArcCoreFurnace");
-    	NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-    	
     	//Recipes
     	GameRegistry.addShapedRecipe(new ItemStack(Main.baconLeaf), " X ", "XYX", " X ", 'X', Items.emerald, 'Y', Blocks.leaves);
     	GameRegistry.addShapedRecipe(new ItemStack(Main.baconSapling), "PEP", "DSD", "PEP", 'P', Items.porkchop, 'E', Main.baconLeaf, 'D', Items.emerald, 'S', Blocks.sapling);
@@ -323,6 +338,16 @@ public class Main
     	GameRegistry.addShapedRecipe(new ItemStack(Main.arclightLegs), "XXX", "X X", "X X", 'X', Main.arclightIngot);
     	GameRegistry.addShapedRecipe(new ItemStack(Main.arclightBoots), "XXX", "X X", "   ", 'X', Main.arclightIngot);
     	GameRegistry.addShapedRecipe(new ItemStack(Main.arclightBoots), "   ", "X X", "X X", 'X', Main.arclightIngot);
+    }
+    	
+    
+    @EventHandler 
+    public void Init(FMLInitializationEvent event){
+    	
+    	GameRegistry.registerTileEntity(TileEntityArcCoreFurnace.class, "ArcCoreFurnace");
+    	GameRegistry.registerTileEntity(TileEntityArcCoreInfuser.class, "ArcCoreInfuser");
+    	NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+    
     }
     
     @EventHandler

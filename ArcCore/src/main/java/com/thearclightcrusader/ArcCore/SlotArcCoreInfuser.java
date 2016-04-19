@@ -8,8 +8,11 @@ import net.minecraft.inventory.Slot;
 
 public class SlotArcCoreInfuser extends Slot {
 
-	public SlotArcCoreInfuser(EntityPlayer player, TileEntityArcCoreInfuser teArcCore, int i, int j, int k) {
+	public SlotArcCoreInfuser(EntityPlayer player, IInventory iinventory, int i, int j, int k) {
+		super(iinventory, i, j, k);
 		// TODO Auto-generated constructor stub
 	}
+
+
 
 }

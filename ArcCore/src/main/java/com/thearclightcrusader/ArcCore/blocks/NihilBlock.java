@@ -16,6 +16,7 @@ public class NihilBlock extends Block {
 		this.setResistance(20);
 		this.setLightLevel(-1);
 		this.setCreativeTab(Main.arcCoreTab);
+		this.setHardness(55);
 	}
 
 }

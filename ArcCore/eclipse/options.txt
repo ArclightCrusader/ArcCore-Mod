@@ -5,14 +5,14 @@ gamma:0.0
 saturation:0.0
 renderDistance:4
 guiScale:0
-particles:2
+particles:0
 bobView:true
 anaglyph3d:false
 advancedOpengl:false
 maxFps:120
 fboEnable:true
 difficulty:2
-fancyGraphics:false
+fancyGraphics:true
 ao:2
 clouds:false
 resourcePacks:[]

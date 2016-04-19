@@ -1,0 +1,43 @@
+package com.thearclightcrusader.ArcCore.container;
+
+import com.thearclightcrusader.ArcCore.tileEntity.TileEntityArcCoreFurnace;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.Slot;
+import net.minecraft.inventory.SlotFurnace;
+
+public class ContainerArcCoreFurnace extends Container{
+	
+	private TileEntityArcCoreFurnace teArcCoreF;
+	
+	public int lastBurnTime;
+	public int lastCurrentItemBurnTime;
+	public int lastCookTime;
+
+	public ContainerArcCoreFurnace(InventoryPlayer inventory, TileEntityArcCoreFurnace tileEntity){
+		this.teArcCoreF = tileEntity;
+		
+		this.addSlotToContainer(new Slot(tileEntity, 0, 56, 17));
+		this.addSlotToContainer(new Slot(tileEntity, 1, 56, 53));
+		this.addSlotToContainer(new SlotFurnace(inventory.player, tileEntity, 2, 116, 35));
+		
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 9; j++) {
+				this.addSlotToContainer(new Slot(inventory, j + i * 9 + 9, 8 + j * 18, 94 + i * 18));
+			}
+		}
+		
+		for(int i = 0; i < 9; i++){
+			this.addSlotToContainer(new Slot(inventory, i, 8 + i * 18, 142));
+		}
+	}
+	
+	
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_) {
+		return true;
+	}
+
+}

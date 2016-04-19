@@ -10,7 +10,7 @@ public class ArclightIngot extends Item {
 
 	public ArclightIngot() {
 		this.setTextureName(References.MODID + ":ArclightIngot");
-		this.setUnlocalizedName("Arclight Ingot");
+		this.setUnlocalizedName("ArclightIngot");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

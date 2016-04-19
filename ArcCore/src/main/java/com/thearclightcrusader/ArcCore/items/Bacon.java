@@ -11,7 +11,7 @@ public class Bacon extends ItemFood {
 
 	public Bacon(int j, boolean b) {
 		super(j, b);
-		this.setTextureName(References.MODID + ":RawBacon.png");
+		this.setTextureName(References.MODID + ":" + "RawBacon");
 		this.setUnlocalizedName("Raw Bacon");
 		this.setCreativeTab(Main.arcCoreTab);
 
