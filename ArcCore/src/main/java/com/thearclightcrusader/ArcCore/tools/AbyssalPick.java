@@ -12,7 +12,7 @@ public class AbyssalPick extends ItemPickaxe {
 	public AbyssalPick(ToolMaterial AbyssalTool) {
 		super(AbyssalTool);
 		this.setUnlocalizedName("AbyssalPick");
-		this.setTextureName(References.MODID + ":AbyssalPick");
+		this.setTextureName(References.MODID + ":AbyssalPickaxe");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

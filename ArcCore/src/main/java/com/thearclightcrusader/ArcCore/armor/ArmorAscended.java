@@ -17,9 +17,9 @@ public class ArmorAscended extends ItemArmor{
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
     {
         if(stack.getItem() == Main.ascendedHelm || stack.getItem() == Main.ascendedChest || stack.getItem() == Main.ascendedBoots){
-        	return References.MODID + ":textures/armor/baconArmor1.png";
+        	return References.MODID + ":textures/armor/ascended_layer_1.png";
         }else if(stack.getItem() == Main.ascendedLegs){
-        	return References.MODID + ":textures/armor/baconArmor2.png";
+        	return References.MODID + ":textures/armor/ascended_layer_2.png";
         }else{
         	return null;
         }

@@ -9,7 +9,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class NihilBlock extends Block {
 
-	public NihilBlock(int i, Material rock) {
+	public NihilBlock(Material rock) {
 		super(rock);
 		this.setBlockName("NihilBlock");
 		this.setBlockTextureName(References.MODID + ":NihilBlock");
@@ -17,6 +17,7 @@ public class NihilBlock extends Block {
 		this.setLightLevel(-1);
 		this.setCreativeTab(Main.arcCoreTab);
 		this.setHardness(55);
+		this.setStepSound(soundTypeStone);
 	}
 
 }

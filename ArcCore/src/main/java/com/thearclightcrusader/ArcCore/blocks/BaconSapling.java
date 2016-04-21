@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Random;
 
 import com.thearclightcrusader.ArcCore.Main;
-import com.thearclightcrusader.ArcCore.WorldGenBaconTree;
 import com.thearclightcrusader.ArcCore.proxy.References;
+import com.thearclightcrusader.ArcCore.worldgen.WorldGenBaconTree;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;
@@ -32,7 +32,7 @@ public class BaconSapling extends BlockSapling {
 		    {
 		        float f = 0.4F;
 		        this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, f * 2.0F, 0.5F + f);
-		        this.setCreativeTab(CreativeTabs.tabDecorations);
+		        this.setCreativeTab(Main.arcCoreTab);
 		    }
 
 		    /**

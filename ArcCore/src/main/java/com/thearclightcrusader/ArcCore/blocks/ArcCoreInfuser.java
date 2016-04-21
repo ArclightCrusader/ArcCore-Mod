@@ -39,6 +39,7 @@ public class ArcCoreInfuser extends BlockContainer{
 		super(Material.iron);
 		rand = new Random();
 		isActive = blockState;
+		this.setStepSound(soundTypeMetal);
 		
 	}
 	

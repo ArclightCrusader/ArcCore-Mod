@@ -42,6 +42,7 @@ public class ArcCoreFurnace extends BlockContainer{
 		super(Material.iron);
 		
 		this.isActive = isActive;
+		this.setStepSound(soundTypeMetal);
 	}
 
 	@SideOnly(Side.CLIENT)

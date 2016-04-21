@@ -1,0 +1,7 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.item.Item;
+
+public class PalladiumSword extends Item {
+
+}

@@ -12,7 +12,7 @@ public class NihilSword extends ItemSword {
 	public NihilSword(ToolMaterial NihilTool) {
 		super(NihilTool);
 		this.setUnlocalizedName("NihilSword");
-		this.setTextureName(References.MODID + ":NihilSword");
+		this.setTextureName(References.MODID + ":FutileSword");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

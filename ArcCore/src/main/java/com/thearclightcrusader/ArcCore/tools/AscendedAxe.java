@@ -11,8 +11,8 @@ public class AscendedAxe extends ItemAxe {
 
 	public AscendedAxe(ToolMaterial AscendedTool) {
 		super(AscendedTool);
-		this.setUnlocalizedName("AscendedPick");
-		this.setTextureName(References.MODID + ":AscendedPick");
+		this.setUnlocalizedName("AscendedAxe");
+		this.setTextureName(References.MODID + ":AscendedAxe");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

@@ -20,6 +20,7 @@ public class ArcCoreLamp extends Block{
 		super(Material.redstoneLight);
 		
 		this.isOn = isOn;
+		this.setStepSound(soundTypeGlass);
 		
 		if(isOn){
 			this.setLightLevel(1.0F);

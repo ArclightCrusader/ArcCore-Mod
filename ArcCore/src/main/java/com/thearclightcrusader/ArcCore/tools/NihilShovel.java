@@ -12,7 +12,7 @@ public class NihilShovel extends ItemSpade {
 	public NihilShovel(ToolMaterial NihilTool) {
 		super(NihilTool);
 		this.setUnlocalizedName("NihilShovel");
-		this.setTextureName(References.MODID + ":NihilShovel");
+		this.setTextureName(References.MODID + ":FutileShovel");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

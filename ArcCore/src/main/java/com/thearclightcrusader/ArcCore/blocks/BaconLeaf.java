@@ -32,7 +32,7 @@ public class BaconLeaf extends BlockLeaves {
     {
         if ((side & 3) == 1 && world.rand.nextInt(meta) == 0)
         {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(Items.emerald, 1, 0));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(Items.emerald));
         }
     }
     

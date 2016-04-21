@@ -1,0 +1,18 @@
+package com.thearclightcrusader.ArcCore.worldgen;
+
+public class BiomeRegistry {
+	
+	public static void Main(){
+		intializeBiome();
+		registerBiome();
+	}
+	
+	public static void intializeBiome(){
+		
+	}
+	
+	public static void registerBiome(){
+		
+	}
+
+}

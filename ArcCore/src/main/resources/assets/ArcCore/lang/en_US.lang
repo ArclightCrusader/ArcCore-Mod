@@ -12,7 +12,13 @@ tile.Sapling.Bacon.name=Bacon Sapling
 tile.ArcCoreLampOff.name=Arc Core Lamp
 tile.ArcCoreLampOn.name=Arc Core Lamp
 
+tile.PalladiumOre.name=Palladium Ore
+tile.CrystalOre.name=Crystal Ore
+tile.AscendedOre.name=Ore of the Ascended
+tile.MoissaniteOre.name=Moissanite Ore
+
 tile.NihilBlock.name=Nihil Block
+tile.ChocoCake.name=Arclight's Chocolate Cake
 
 tile.ArcCoreInfuserIdle.name=Arc Core Infuser
 tile.ArcCoreInfuserActive.name=Arc Core Infuser
@@ -30,6 +36,11 @@ item.ArclightChest.name=Arclight Chestplate
 item.ArclightLegs.name=Arclight Leggings
 item.ArclightBoots.name=Arclight Boots
 
+item.PalladiumHelm.name=Palladium Helmet
+item.PalladiumChest.name=Palladium Chestplate
+item.PalladiumLegs.name=Palladium Leggings
+item.PalladiumBoots.name=Palladium Boots
+
 item.AbyssalHelm.name=Abyssal Helm
 item.AbyssalChest.name=Abyssal Chestplate
 item.AbyssalLegs.name=Abyssal Leggings
@@ -44,6 +55,11 @@ item.AscendedHelm.name=Helmet of the Ascended
 item.AscendedChest.name=Chestplate of the Ascended
 item.AscendedLegs.name=Leggings of the Ascended
 item.AscendedBoots.name=Boots of the Ascended
+
+item.MoissaniteHelm.name=Moissanite Helm
+item.MoissaniteChest.name=Moissanite Chestplate
+item.MoissaniteLegs.name=Moissanite Leggings
+item.MoissaniteBoots.name=Moissanite Boots
 
 item.BaconSword.name=Bacon Sword
 item.BaconPick.name=Bacon Pickaxe
@@ -75,11 +91,27 @@ item.NihilAxe.name=Futile Axe
 item.NihilShovel.name=Futile Shovel
 item.NihilHoe.name=Futile Hoe
 
-item.ArcCore.name=Arc Core
+item.MoissaniteSword.name=Moissanite Sword
+item.MoissanitePick.name=Moissanite Pickaxe
+item.MoissaniteAxe.name=Moissanite Axe
+item.MoissaniteShovel.name=Moissanite Shovel
+item.MoissaniteHoe.name=Moissanite Hoe
+
+item.PalladiumSword.name=Palladium Sword
+item.PalladiumPick.name=Palladium Pickaxe
+item.PalladiumAxe.name=Palladium Axe
+item.PalladiumShovel.name=Palladium Shovel
+item.PalladiumHoe.name=Palladium Hoe
+
+item.Arc Core.name=Arc Core
 item.ArclightIngot.name=Arclight Ingot
 item.protoArcCore.name=Prototype Arc Core
 item.WaterTalisman.name=Water Talisman
 item.ArcDiamond.name=Arc Diamond
+item.AscendedIngot.name=Ingot of the Ascended
+item.PalladiumIngot.name=Palladium Ingot
+item.Moissanite.name=Moissanite
+item.InfusedQuartz.name=Infused Quartz
 
 item.CalciumAcetate.name=Calcium Acetate
 item.FuelGel.name=Fuel Gel

@@ -1,0 +1,7 @@
+package com.thearclightcrusader.ArcCore.blocks;
+
+import net.minecraft.block.Block;
+
+public class GildedPlanks extends Block {
+
+}

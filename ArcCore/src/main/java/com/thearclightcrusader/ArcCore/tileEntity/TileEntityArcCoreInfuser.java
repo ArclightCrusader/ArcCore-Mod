@@ -105,7 +105,9 @@ public class TileEntityArcCoreInfuser extends TileEntity implements ISidedInvent
 		}else{
 			Item item = itemstack.getItem();
 			
+			if (item == Main.organicFuelGel) return 25;
 			if (item == Main.fuelGel) return 50;
+			if (item == Main.survivalistFuelGel) return 75;
 			
 			return 0;
 		}
@@ -198,7 +200,7 @@ public class TileEntityArcCoreInfuser extends TileEntity implements ISidedInvent
 	
 	private boolean canInfuse() {
 		
-		if (slots[0] == null || slots[1] == null || slots[2] == null) {
+		if (slots[0] == null && slots[1] == null && slots[2] == null) {
 			return false;
 		}
 		

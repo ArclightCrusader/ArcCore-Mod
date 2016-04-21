@@ -12,7 +12,7 @@ public class NihilHoe extends ItemHoe {
 	public NihilHoe(ToolMaterial NihilTool) {
 		super(NihilTool);
 		this.setUnlocalizedName("NihilHoe");
-		this.setTextureName(References.MODID + ":NihilHoe");
+		this.setTextureName(References.MODID + ":FutileHoe");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

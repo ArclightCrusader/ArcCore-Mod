@@ -12,7 +12,7 @@ public class NihilPick extends ItemPickaxe {
 	public NihilPick(ToolMaterial NihilTool) {
 		super(NihilTool);
 		this.setUnlocalizedName("NihilPick");
-		this.setTextureName(References.MODID + ":NihilPick");
+		this.setTextureName(References.MODID + ":FutilePick");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

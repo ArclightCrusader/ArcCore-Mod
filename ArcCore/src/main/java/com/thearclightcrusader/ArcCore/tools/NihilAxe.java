@@ -12,7 +12,7 @@ public class NihilAxe extends ItemAxe {
 	public NihilAxe(ToolMaterial NihilTool) {
 		super(NihilTool);
 		this.setUnlocalizedName("NihilAxe");
-		this.setTextureName(References.MODID + ":NihilAxe");
+		this.setTextureName(References.MODID + ":FutileAxe");
 		this.setCreativeTab(Main.arcCoreTab);
 	}
 

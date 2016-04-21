@@ -1,0 +1,13 @@
+package com.thearclightcrusader.ArcCore.armor;
+
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+
+public class ArmorPalladium extends ItemArmor{
+
+	public ArmorPalladium(ArmorMaterial armorPalladium, int j, int k, String string) {
+		super(armorPalladium, k, k);
+		
+	}
+
+}

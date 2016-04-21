@@ -1,0 +1,25 @@
+package com.thearclightcrusader.ArcCore.worldgen;
+
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeManager.BiomeEntry;
+import net.minecraftforge.common.BiomeManager.BiomeType;
+
+public class BiomesAC {
+	
+	public static BiomeGenBase biomeFireLands;
+
+	public static void init(){
+		registerBiomes();
+	}
+
+	private static void registerBiomes() {
+		
+		biomeFireLands = new BiomeFireLands(5012).setBiomeName("Fire Lands");
+		BiomeDictionary.registerBiomeType(biomeFireLands, Type.FOREST);
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biomeFireLands, 10));
+		
+	}
+}

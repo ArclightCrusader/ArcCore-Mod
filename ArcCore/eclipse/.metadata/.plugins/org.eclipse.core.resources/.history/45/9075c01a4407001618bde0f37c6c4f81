@@ -1,0 +1,29 @@
+package com.thearclightcrusader.ArcCore.worldgen;
+
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
+import net.minecraftforge.common.BiomeManager;
+
+public class BiomeRegistry {
+	
+	public static void Main(){
+		intializeBiome();
+		registerBiome();
+	}
+	
+	public static BiomeGenBase biomeGilded;
+	
+	public static void intializeBiome(){
+		
+		biomeGilded = new BiomeGenGilded(5012).setBiomeName("Gilded");
+		
+	}
+	
+	public static void registerBiome(){
+		BiomeDictionary.registerBiomeType(biomeGilded, Type.FOREST);
+		BiomeManager.addSpawnBiome(biomeGilded);
+		
+	}
+
+}

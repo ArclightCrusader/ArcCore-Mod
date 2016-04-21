@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 public class PrototypeCore extends Item {
 
 	public PrototypeCore() {
-		this.setTextureName(References.MODID + "PrototypeCore");
+		this.setTextureName(References.MODID + ":PrototypeCore");
 		this.setUnlocalizedName("protoArcCore");
 		this.setCreativeTab(Main.arcCoreTab);
 	}

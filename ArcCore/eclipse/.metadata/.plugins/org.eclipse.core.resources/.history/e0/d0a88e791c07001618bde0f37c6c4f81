@@ -1,0 +1,12 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class PalladiumOre extends Block {
+
+	public PalladiumOre(Material rock) {
+		super(Material.rock);
+	}
+
+}

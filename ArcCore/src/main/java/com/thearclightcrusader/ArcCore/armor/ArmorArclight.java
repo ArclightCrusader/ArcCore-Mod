@@ -15,13 +15,13 @@ public class ArmorArclight extends ItemArmor{
 		super(Arclight, j, k);
 		
 		if (k == 0) {
-		    this.setTextureName(References.MODID + ":arclight_helmet");
+		    this.setTextureName(References.MODID + ":ArclightHelmet");
 	}
 		else if (k == 1) {
 			this.setTextureName(References.MODID + ":arclight_chestplate");
 	}
 		else if (k == 2) {
-				this.setTextureName(References.MODID + ":arclight_leggings");
+				this.setTextureName(References.MODID + ":ArclightLeggins");
 	}
 		else if (k == 3) {
 				this.setTextureName(References.MODID + ":arclight_boots");
@@ -33,9 +33,9 @@ public class ArmorArclight extends ItemArmor{
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
     {
         if(stack.getItem() == Main.arclightHelm || stack.getItem() == Main.arclightChest || stack.getItem() == Main.arclightBoots){
-        	return References.MODID + ":textures/armor/arclightArmor1.png";
+        	return References.MODID + ":textures/armor/arclight_layer_1.png";
         }else if(stack.getItem() == Main.arclightLegs){
-        	return References.MODID + ":textures/armor/arclightArmor2.png";
+        	return References.MODID + ":textures/armor/arclight_layer_2.png";
         }else{
         	return null;
         }

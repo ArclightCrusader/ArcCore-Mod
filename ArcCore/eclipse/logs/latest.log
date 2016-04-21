@@ -1,29 +1,45 @@
-[18:29:42] [main/INFO]: Setting user: Player921
-[18:29:43] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:29:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
-[18:29:49] [Sound Library Loader/INFO]: Sound engine started
-[18:29:49] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:29:49] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:29:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
-[18:29:49] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:29:49] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:29:50] [Sound Library Loader/INFO]: Sound engine started
-[18:29:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:29:52] [Server thread/INFO]: Generating keypair
-[18:29:52] [Server thread/INFO]: Preparing start region for level 0
-[18:29:53] [Server thread/INFO]: Changing view distance to 4, from 10
-[18:29:53] [Server thread/INFO]: Player921[local:E:20b81c90] logged in with entity id 251 at (419.21173206931593, 83.78390841288811, 35.23959309892146)
-[18:29:53] [Server thread/INFO]: Player921 joined the game
-[18:29:54] [Server thread/INFO]: Player921 has just earned the achievement [Taking Inventory]
-[18:29:54] [Client thread/INFO]: [CHAT] Player921 has just earned the achievement [Taking Inventory]
-[18:30:05] [Server thread/INFO]: Saving and pausing game...
-[18:30:05] [Server thread/INFO]: Saving chunks for level 'New World1'/Overworld
-[18:30:05] [Server thread/INFO]: Saving chunks for level 'New World1'/Nether
-[18:30:05] [Server thread/INFO]: Saving chunks for level 'New World1'/The End
-[18:30:06] [Server thread/INFO]: Stopping server
-[18:30:06] [Server thread/INFO]: Saving players
-[18:30:06] [Server thread/INFO]: Saving worlds
-[18:30:06] [Server thread/INFO]: Saving chunks for level 'New World1'/Overworld
-[18:30:06] [Server thread/INFO]: Saving chunks for level 'New World1'/Nether
-[18:30:06] [Server thread/INFO]: Saving chunks for level 'New World1'/The End
-[18:30:07] [Client thread/INFO]: Stopping!
+[21:46:41] [main/INFO]: Setting user: Player859
+[21:46:42] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:46:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[21:46:48] [Sound Library Loader/INFO]: Sound engine started
+[21:46:48] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:46:48] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:46:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[21:46:49] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:46:49] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:46:50] [Sound Library Loader/INFO]: Sound engine started
+[21:47:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:47:03] [Server thread/INFO]: Generating keypair
+[21:47:03] [Server thread/INFO]: Converting map!
+[21:47:03] [Server thread/INFO]: Scanning folders...
+[21:47:03] [Server thread/INFO]: Total conversion count is 0
+[21:47:03] [Server thread/INFO]: Preparing start region for level 0
+[21:47:04] [Server thread/INFO]: Preparing spawn area: 16%
+[21:47:05] [Server thread/INFO]: Preparing spawn area: 39%
+[21:47:06] [Server thread/INFO]: Preparing spawn area: 65%
+[21:47:07] [Server thread/INFO]: Preparing spawn area: 92%
+[21:47:07] [Server thread/INFO]: Changing view distance to 4, from 10
+[21:47:08] [Server thread/INFO]: Player859[local:E:ad2ab134] logged in with entity id 161 at (-4.5, 86.0, 100.5)
+[21:47:08] [Server thread/INFO]: Player859 joined the game
+[21:47:22] [Server thread/INFO]: Saving and pausing game...
+[21:47:22] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Overworld
+[21:47:22] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Nether
+[21:47:22] [Server thread/INFO]: Saving chunks for level 'Test Biome'/The End
+[21:47:38] [Server thread/INFO]: Player859 has just earned the achievement [Taking Inventory]
+[21:47:38] [Client thread/INFO]: [CHAT] Player859 has just earned the achievement [Taking Inventory]
+[21:48:40] [Server thread/INFO]: Saving and pausing game...
+[21:48:40] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Overworld
+[21:48:40] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Nether
+[21:48:40] [Server thread/INFO]: Saving chunks for level 'Test Biome'/The End
+[21:48:45] [Server thread/INFO]: Changing view distance to 11, from 4
+[21:51:26] [Server thread/INFO]: Saving and pausing game...
+[21:51:26] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Overworld
+[21:51:27] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Nether
+[21:51:27] [Server thread/INFO]: Saving chunks for level 'Test Biome'/The End
+[21:51:27] [Server thread/INFO]: Stopping server
+[21:51:27] [Server thread/INFO]: Saving players
+[21:51:27] [Server thread/INFO]: Saving worlds
+[21:51:27] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Overworld
+[21:51:27] [Server thread/INFO]: Saving chunks for level 'Test Biome'/Nether
+[21:51:27] [Server thread/INFO]: Saving chunks for level 'Test Biome'/The End
+[21:51:29] [Client thread/INFO]: Stopping!

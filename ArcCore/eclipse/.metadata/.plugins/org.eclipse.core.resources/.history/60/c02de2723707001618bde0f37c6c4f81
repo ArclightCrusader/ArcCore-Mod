@@ -1,0 +1,12 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class MoissaniteOre extends Block{
+
+	public MoissaniteOre(Material rock) {
+		super(Material.rock);
+	}
+
+}

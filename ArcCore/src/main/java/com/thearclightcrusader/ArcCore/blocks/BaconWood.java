@@ -19,6 +19,7 @@ public class BaconWood extends BlockLog {
 	
 	
 	public BaconWood() {
+		this.setStepSound(soundTypeWood);
 	}
 
 	@SideOnly(Side.CLIENT)
