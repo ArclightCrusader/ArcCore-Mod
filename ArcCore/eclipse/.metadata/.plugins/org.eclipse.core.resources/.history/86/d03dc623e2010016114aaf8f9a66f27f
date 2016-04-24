@@ -1,7 +1,0 @@
-package com.thearclightcrusader.ArcCore;
-
-import net.minecraft.inventory.Slot;
-
-public class SlotArcCoreInfuser extends Slot {
-
-}

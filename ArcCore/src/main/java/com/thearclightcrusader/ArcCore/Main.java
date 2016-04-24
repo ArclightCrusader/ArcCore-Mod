@@ -16,6 +16,7 @@ import com.thearclightcrusader.ArcCore.blocks.BaconSapling;
 import com.thearclightcrusader.ArcCore.blocks.BaconWood;
 import com.thearclightcrusader.ArcCore.blocks.ChocoCake;
 import com.thearclightcrusader.ArcCore.blocks.CrystalOre;
+import com.thearclightcrusader.ArcCore.blocks.FireStone;
 import com.thearclightcrusader.ArcCore.blocks.GildedDirt;
 import com.thearclightcrusader.ArcCore.blocks.GildedGrass;
 import com.thearclightcrusader.ArcCore.blocks.GildedLeaf;
@@ -27,7 +28,9 @@ import com.thearclightcrusader.ArcCore.blocks.GildedStoneBricks;
 import com.thearclightcrusader.ArcCore.blocks.MoissaniteOre;
 import com.thearclightcrusader.ArcCore.blocks.NihilBlock;
 import com.thearclightcrusader.ArcCore.blocks.PalladiumOre;
+import com.thearclightcrusader.ArcCore.entity.EntityCyclops;
 import com.thearclightcrusader.ArcCore.gui.GuiHandler;
+import com.thearclightcrusader.ArcCore.handler.EntityHandler;
 import com.thearclightcrusader.ArcCore.items.ArcCore;
 import com.thearclightcrusader.ArcCore.items.ArcDiamond;
 import com.thearclightcrusader.ArcCore.items.ArclightIngot;
@@ -165,6 +168,9 @@ public class Main
     public static Block ascendedOre = new AscendedOre(Material.rock).setBlockName("AscendedOre");
     public static Block chocoCake = new ChocoCake(Material.cake).setBlockName("ChocoCake");
     public static Block moissaniteOre = new MoissaniteOre(Material.rock).setBlockName("MoissaniteOre");
+    
+    public static Block fireStone = new FireStone(Material.rock).setBlockName("FireStone");
+    
     public static Block gildedSapling = new GildedSapling().setBlockName("GildedSapling").setCreativeTab(Main.arcCoreTab);
 	public static Block gildedLeaf = new GildedLeaf().setBlockName("GildedLeaf").setCreativeTab(Main.arcCoreTab);
 	public static Block gildedLog = new GildedLog().setBlockName("GildedLog").setCreativeTab(Main.arcCoreTab);
@@ -286,6 +292,9 @@ public class Main
     	
     	BiomesAC.init();
     	
+    	//Entities
+    	EntityHandler.registerMonsters(EntityCyclops.class, "Cyclops", 50, 79, 1, 3);
+    	
     	//Blocks
     	baconSapling = new BaconSapling().setBlockName("Sapling").setCreativeTab(Main.arcCoreTab);
     	baconLeaf = new BaconLeaf().setBlockName("Leaf").setCreativeTab(Main.arcCoreTab);
@@ -321,6 +330,7 @@ public class Main
     	GameRegistry.registerBlock(gildedStone, "GildedStone");
     	GameRegistry.registerBlock(gildedStoneBricks, "GildedStoneBricks");
     	GameRegistry.registerBlock(gildedPlanks, "GildedPlanks");
+    	GameRegistry.registerBlock(fireStone, "FireStone");
     	
     	//Machine Registry
     	GameRegistry.registerBlock(arcCoreFurnaceIdle, "ArcCoreFurnaceIdle");

@@ -10,6 +10,10 @@ import net.minecraftforge.common.BiomeManager.BiomeType;
 public class BiomesAC {
 	
 	public static BiomeGenBase biomeFireLands;
+	public static BiomeGenBase biomeRedForest;
+	public static BiomeGenBase biomeGildedForest;
+	public static BiomeGenBase biomeGildedPlains;
+	public static BiomeGenBase biomeNihilLand;
 
 	public static void init(){
 		registerBiomes();
@@ -17,9 +21,30 @@ public class BiomesAC {
 
 	private static void registerBiomes() {
 		
+		//FireLands
 		biomeFireLands = new BiomeFireLands(78).setBiomeName("Fire Lands");
-		BiomeDictionary.registerBiomeType(biomeFireLands, Type.FOREST);
+		BiomeDictionary.registerBiomeType(biomeFireLands, Type.MOUNTAIN);
 		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biomeFireLands, 10));
+		
+		//GildedForest
+		biomeGildedForest = new BiomeGildedForest(79).setBiomeName("Gilded Forest");
+		BiomeDictionary.registerBiomeType(biomeGildedForest, Type.FOREST);
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biomeGildedForest, 10));
+		
+		//RedForest
+		biomeRedForest = new BiomeRedForest(80).setBiomeName("Red Forest");
+		BiomeDictionary.registerBiomeType(biomeRedForest, Type.FOREST);
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biomeRedForest, 10));
+		
+		//GildedPlains
+		biomeGildedPlains = new BiomeGildedPlains(81).setBiomeName("Gilded Plains");
+		BiomeDictionary.registerBiomeType(biomeGildedPlains, Type.PLAINS);
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(biomeGildedPlains, 10));
+		
+		//NihilLands
+		biomeNihilLand = new BiomeNihilLand(82).setBiomeName("Land of the Nihil");
+		BiomeDictionary.registerBiomeType(biomeNihilLand, Type.CONIFEROUS);
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(biomeNihilLand, 10));
 		
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.beach);
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.birchForest);
@@ -61,7 +86,10 @@ public class BiomesAC {
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.taiga);
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.taigaHills);
 		  
-		  BiomeManager.addSpawnBiome(biomeFireLands);
+		  BiomeManager.addSpawnBiome(biomeNihilLand);
+		  //BiomeManager.addSpawnBiome(biomeRedForest);
+		  //BiomeManager.addSpawnBiome(biomeGildedForest);
+		  //BiomeManager.addSpawnBiome(biomeFireLands);
 		
 	}
 }

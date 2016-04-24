@@ -1,8 +1,17 @@
 package com.thearclightcrusader.ArcCore.proxy;
 
+import com.thearclightcrusader.ArcCore.entity.EntityCyclops;
+import com.thearclightcrusader.ArcCore.model.ModelCyclops;
+import com.thearclightcrusader.ArcCore.render.RenderCyclops;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+
 public class ProxyClient extends ProxyCommon{
 
 	public void registerRenderers(){
+		
+		//Entities
+		RenderingRegistry.registerEntityRenderingHandler(EntityCyclops.class, new RenderCyclops(new ModelCyclops(), 0.3F));
 		
 	}
 }
