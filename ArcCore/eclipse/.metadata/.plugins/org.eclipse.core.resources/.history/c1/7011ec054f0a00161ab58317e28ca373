@@ -1,0 +1,178 @@
+package com.thearclightcrusader.ArcCore.model;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
+
+public class ModelFairy extends ModelBase
+{
+  //fields
+    ModelRenderer Body;
+    ModelRenderer Leftside;
+    ModelRenderer Rightside;
+    ModelRenderer Head;
+    ModelRenderer FrontSide;
+    ModelRenderer BackSide;
+    ModelRenderer LeftArm;
+    ModelRenderer RightArm;
+    ModelRenderer LeftLeg;
+    ModelRenderer RightLeg;
+    ModelRenderer Wings;
+    ModelRenderer Wand;
+    ModelRenderer Crown;
+  
+  public ModelFairy()
+  {
+    textureWidth = 64;
+    textureHeight = 64;
+    setTextureOffset("Wings.Row1", 0, 36);
+    setTextureOffset("Wings.Row2", 2, 38);
+    setTextureOffset("Wings.Row3", 4, 40);
+    setTextureOffset("Wings.Row4", 6, 42);
+    setTextureOffset("Wings.Row5", 8, 44);
+    setTextureOffset("Wings.Row6", 10, 46);
+    setTextureOffset("Crown.FrontCrown", 27, 26);
+    setTextureOffset("Crown.Stud1", 41, 0);
+    setTextureOffset("Crown.Stud2", 41, 0);
+    setTextureOffset("Crown.BackCrown", 27, 26);
+    setTextureOffset("Crown.LeftCrown", 27, 29);
+    setTextureOffset("Crown.RightCrown", 27, 29);
+    setTextureOffset("Crown.Stud3", 41, 0);
+    setTextureOffset("Crown.Stud5", 41, 0);
+    setTextureOffset("Crown.Stud6", 41, 0);
+    setTextureOffset("Crown.Stud7", 41, 0);
+    setTextureOffset("Crown.Stud8", 41, 0);
+    setTextureOffset("Crown.Stud11", 41, 0);
+    setTextureOffset("Crown.Stud_9", 41, 0);
+    setTextureOffset("Crown.Stud10", 41, 0);
+    setTextureOffset("Crown.Stud12", 41, 0);
+    
+      Body = new ModelRenderer(this, 26, 9);
+      Body.addBox(-2F, 0F, -2F, 4, 8, 4);
+      Body.setRotationPoint(0F, 0F, 0F);
+      Body.setTextureSize(64, 64);
+      Body.mirror = true;
+      setRotation(Body, 0F, 0F, 0F);
+      Leftside = new ModelRenderer(this, 0, 12);
+      Leftside.addBox(-3F, 1F, -2F, 1, 6, 4);
+      Leftside.setRotationPoint(0F, 0F, 0F);
+      Leftside.setTextureSize(64, 64);
+      Leftside.mirror = true;
+      setRotation(Leftside, 0F, 0F, 0F);
+      Rightside = new ModelRenderer(this, 0, 12);
+      Rightside.addBox(2F, 1F, -2F, 1, 6, 4);
+      Rightside.setRotationPoint(0F, 0F, 0F);
+      Rightside.setTextureSize(64, 64);
+      Rightside.mirror = true;
+      setRotation(Rightside, 0F, 0F, 0F);
+      Head = new ModelRenderer(this, 0, 0);
+      Head.addBox(-3F, -6F, -3F, 6, 6, 6);
+      Head.setRotationPoint(0F, 0F, 0F);
+      Head.setTextureSize(64, 64);
+      Head.mirror = true;
+      setRotation(Head, 0F, 0F, 0F);
+      FrontSide = new ModelRenderer(this, 0, 22);
+      FrontSide.addBox(-2F, 1F, -3F, 4, 6, 1);
+      FrontSide.setRotationPoint(0F, 0F, 0F);
+      FrontSide.setTextureSize(64, 64);
+      FrontSide.mirror = true;
+      setRotation(FrontSide, 0F, 0F, 0F);
+      BackSide = new ModelRenderer(this, 0, 29);
+      BackSide.addBox(-2F, 1F, 2F, 4, 6, 1);
+      BackSide.setRotationPoint(0F, 0F, 0F);
+      BackSide.setTextureSize(64, 64);
+      BackSide.mirror = true;
+      setRotation(BackSide, 0F, 0F, 0F);
+      LeftArm = new ModelRenderer(this, 24, 0);
+      LeftArm.addBox(-2F, -1F, -1F, 2, 6, 2);
+      LeftArm.setRotationPoint(-3F, 2F, 0F);
+      LeftArm.setTextureSize(64, 64);
+      LeftArm.mirror = true;
+      setRotation(LeftArm, 0F, 0F, 0F);
+      RightArm = new ModelRenderer(this, 32, 0);
+      RightArm.addBox(0F, -1F, -1F, 2, 6, 2);
+      RightArm.setRotationPoint(3F, 2F, 0F);
+      RightArm.setTextureSize(64, 64);
+      RightArm.mirror = true;
+      setRotation(RightArm, 0F, 0F, 0F);
+      LeftLeg = new ModelRenderer(this, 18, 12);
+      LeftLeg.addBox(-1F, 0F, -1F, 2, 5, 2);
+      LeftLeg.setRotationPoint(-2F, 8F, 0F);
+      LeftLeg.setTextureSize(64, 64);
+      LeftLeg.mirror = true;
+      setRotation(LeftLeg, 0F, 0F, 0F);
+      RightLeg = new ModelRenderer(this, 10, 12);
+      RightLeg.addBox(-1F, 0F, -1F, 2, 5, 2);
+      RightLeg.setRotationPoint(2F, 8F, 0F);
+      RightLeg.setTextureSize(64, 64);
+      RightLeg.mirror = true;
+      setRotation(RightLeg, 0F, 0F, 0F);
+    Wings = new ModelRenderer(this, "Wings");
+    Wings.setRotationPoint(0F, 0F, 0F);
+    setRotation(Wings, 0F, 0F, 0F);
+    Wings.mirror = true;
+      Wings.addBox("Row1", -6F, 1F, 3F, 12, 1, 1);
+      Wings.addBox("Row2", -5F, 2F, 3F, 10, 1, 1);
+      Wings.addBox("Row3", -4F, 3F, 3F, 8, 1, 1);
+      Wings.addBox("Row4", -3F, 4F, 3F, 6, 1, 1);
+      Wings.addBox("Row5", -2F, 5F, 3F, 4, 1, 1);
+      Wings.addBox("Row6", -1F, 6F, 3F, 2, 1, 1);
+      Wand = new ModelRenderer(this, 10, 20);
+      Wand.addBox(-1F, 4F, -5F, 1, 1, 7);
+      Wand.setRotationPoint(-3F, 2F, 0F);
+      Wand.setTextureSize(64, 64);
+      Wand.mirror = true;
+      setRotation(Wand, 0F, 0F, 0F);
+    Crown = new ModelRenderer(this, "Crown");
+    Crown.setRotationPoint(0F, 0F, 0F);
+    setRotation(Crown, 0F, 0F, 0F);
+    Crown.mirror = true;
+      Crown.addBox("FrontCrown", -3F, -6F, -4F, 6, 1, 1);
+      Crown.addBox("Stud1", 2F, -7F, -4F, 1, 1, 1);
+      Crown.addBox("Stud2", 0F, -7F, -4F, 1, 1, 1);
+      Crown.addBox("BackCrown", -3F, -6F, 3F, 6, 1, 1);
+      Crown.addBox("LeftCrown", -4F, -6F, -3F, 1, 1, 6);
+      Crown.addBox("Stud4", -4F, -7F, -3F, 1, 1, 1);
+      Crown.addBox("RightCrown", 3F, -6F, -3F, 1, 1, 6);
+      Crown.addBox("Stud3", -2F, -7F, -4F, 1, 1, 1);
+      Crown.addBox("Stud5", -4F, -7F, -1F, 1, 1, 1);
+      Crown.addBox("Stud6", -4F, -7F, 1F, 1, 1, 1);
+      Crown.addBox("Stud7", -3F, -7F, 3F, 1, 1, 1);
+      Crown.addBox("Stud8", -1F, -7F, 3F, 1, 1, 1);
+      Crown.addBox("Stud11", 3F, -7F, 0F, 1, 1, 1);
+      Crown.addBox("Stud 9", 1F, -7F, 3F, 1, 1, 1);
+      Crown.addBox("Stud10", 3F, -7F, 2F, 1, 1, 1);
+      Crown.addBox("Stud12", 3F, -7F, -2F, 1, 1, 1);
+  }
+  
+  public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
+  {
+    super.render(entity, f, f1, f2, f3, f4, f5);
+    setRotationAngles(f, f1, f2, f3, f4, f5);
+    Body.render(f5);
+    Leftside.render(f5);
+    Rightside.render(f5);
+    Head.render(f5);
+    FrontSide.render(f5);
+    BackSide.render(f5);
+    LeftArm.render(f5);
+    RightArm.render(f5);
+    LeftLeg.render(f5);
+    RightLeg.render(f5);
+    Wings.render(f5);
+    Wand.render(f5);
+    Crown.render(f5);
+  }
+  
+  private void setRotation(ModelRenderer model, float x, float y, float z)
+  {
+    model.rotateAngleX = x;
+    model.rotateAngleY = y;
+    model.rotateAngleZ = z;
+  }
+  
+  public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5)
+  {
+    super.setRotationAngles(f, f1, f2, f3, f4, f5);
+  }
+
+}

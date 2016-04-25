@@ -1,0 +1,127 @@
+itemGroup.arccore=Arc Core
+
+tile.Log.bacon.name=Bacon Wood
+item.Emerald Encrusted Bacon.name=Emerald Encrusted Bacon
+item.Bacon Root.name=Bacon Root
+item.Bacon Beer.name=Bacon Beer
+item.Raw Bacon.name=Raw Bacon
+item.Cooked Bacon.name=Cooked Bacon
+tile.Leaf.Bacon.name=Emerald Leaf
+tile.Sapling.Bacon.name=Bacon Sapling
+
+entity.Cyclops.name=Cyclops
+entity.Nihil.name=Nihilian Spririt
+entity.Fairy.name=Fairy
+
+tile.ArcCoreLampOff.name=Arc Core Lamp
+tile.ArcCoreLampOn.name=Arc Core Lamp
+
+tile.PalladiumOre.name=Palladium Ore
+tile.CrystalOre.name=Crystal Ore
+tile.AscendedOre.name=Ore of the Ascended
+tile.MoissaniteOre.name=Moissanite Ore
+
+tile.FireStone.name=Fire Stone
+
+tile.NihilBlock.name=Nihil Block
+tile.ChocoCake.name=Arclight's Chocolate Cake
+
+tile.ArcCoreInfuserIdle.name=Arc Core Infuser
+tile.ArcCoreInfuserActive.name=Arc Core Infuser
+
+tile.ArcCoreFurnaceIdle.name=Arc Core Furnace
+tile.ArcCoreFurnaceActive.name=Arc Core Furnace
+
+item.BaconHelm.name=Emerald Encrusted Bacon Helmet
+item.BaconChest.name=Emerald Encrusted Bacon Chestpalte
+item.BaconLegs.name=Emerald Encrusted Bacon Leggings
+item.BaconBoots.name=Emerald Encrusted Bacon Boots
+
+item.ArclightHelm.name=Arclight Helmet
+item.ArclightChest.name=Arclight Chestplate
+item.ArclightLegs.name=Arclight Leggings
+item.ArclightBoots.name=Arclight Boots
+
+item.PalladiumHelm.name=Palladium Helmet
+item.PalladiumChest.name=Palladium Chestplate
+item.PalladiumLegs.name=Palladium Leggings
+item.PalladiumBoots.name=Palladium Boots
+
+item.AbyssalHelm.name=Abyssal Helm
+item.AbyssalChest.name=Abyssal Chestplate
+item.AbyssalLegs.name=Abyssal Leggings
+item.AbyssalBoots.name=Abyssal Boots
+
+item.NihilHelm.name=Futile Helmet
+item.NihilChest.name=Futile Chestplate
+item.NihilLegs.name=Futile Leggings
+item.NihilBoots.name=Futile Boots
+
+item.AscendedHelm.name=Helmet of the Ascended
+item.AscendedChest.name=Chestplate of the Ascended
+item.AscendedLegs.name=Leggings of the Ascended
+item.AscendedBoots.name=Boots of the Ascended
+
+item.MoissaniteHelm.name=Moissanite Helm
+item.MoissaniteChest.name=Moissanite Chestplate
+item.MoissaniteLegs.name=Moissanite Leggings
+item.MoissaniteBoots.name=Moissanite Boots
+
+item.BaconSword.name=Bacon Sword
+item.BaconPick.name=Bacon Pickaxe
+item.BaconAxe.name=Bacon Axe
+item.BaconShovel.name=Bacon Shovel
+item.BaconHoe.name=Bacon Hoe
+
+item.ArclightSword.name=Arclight Sword
+item.ArclightPick.name=Arclight Pickaxe
+item.ArclightAxe.name=Arclight Axe
+item.ArclightShovel.name=Arclight Shovel
+item.ArclightHoe.name=Arclight Hoe
+
+item.AbyssalSword.name=Abyssal Sword
+item.AbyssalPick.name=Abyssal Pickaxe
+item.AbyssalAxe.name=Abyssal Axe
+item.AbyssalShovel.name=Abyssal Shovel
+item.AbyssalHoe.name=Abyssal Hoe
+
+item.AscendedSword.name=Sword of the Ascended
+item.AscendedPick.name=Pickaxe of the Ascended
+item.AscendedAxe.name=Axe of the Ascended
+item.AscendedShovel.name=Shovel of the Ascended
+item.AscendedHoe.name=Hoe of the Ascended
+
+item.NihilSword.name=Futile Sword
+item.NihilPick.name=Futile Pickaxe
+item.NihilAxe.name=Futile Axe
+item.NihilShovel.name=Futile Shovel
+item.NihilHoe.name=Futile Hoe
+
+item.MoissaniteSword.name=Moissanite Sword
+item.MoissanitePick.name=Moissanite Pickaxe
+item.MoissaniteAxe.name=Moissanite Axe
+item.MoissaniteShovel.name=Moissanite Shovel
+item.MoissaniteHoe.name=Moissanite Hoe
+
+item.PalladiumSword.name=Palladium Sword
+item.PalladiumPick.name=Palladium Pickaxe
+item.PalladiumAxe.name=Palladium Axe
+item.PalladiumShovel.name=Palladium Shovel
+item.PalladiumHoe.name=Palladium Hoe
+
+item.Arc Core.name=Arc Core
+item.ArclightIngot.name=Arclight Ingot
+item.protoArcCore.name=Prototype Arc Core
+item.WaterTalisman.name=Water Talisman
+item.ArcDiamond.name=Arc Diamond
+item.AscendedIngot.name=Ingot of the Ascended
+item.PalladiumIngot.name=Palladium Ingot
+item.Moissanite.name=Moissanite
+item.InfusedQuartz.name=Infused Quartz
+item.CyclopsEye.name=Cyclops Eye
+item.NihilSoulShard.name=Nihilian Soul Shard
+
+item.CalciumAcetate.name=Calcium Acetate
+item.FuelGel.name=Fuel Gel
+item.SurvivalistFuelGel.name=Survivalist's Fuel Gel
+item.OrganicFuelGel.name=Organic Fuel Gel

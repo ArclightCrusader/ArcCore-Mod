@@ -25,4 +25,18 @@ public class EntityHandler {
 		EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, mainColor, subColor));
 
 	}
+	
+	public static void registerFairy(Class entityClass, String name, int spawnChance, int minGroup, int maxGroup){
+		int entityId = EntityRegistry.findGlobalUniqueEntityId();
+		long x = name.hashCode();
+		Random random = new Random(x);
+		int mainColor = random.nextInt() * 16777215;
+		int subColor = random.nextInt() * 16777215;
+		
+		EntityRegistry.registerGlobalEntityID(entityClass, name, entityId);
+		EntityRegistry.addSpawn(name, spawnChance, minGroup, maxGroup, EnumCreatureType.monster, BiomeGenBase.getBiome(79), BiomeGenBase.getBiome(81));
+		EntityRegistry.registerModEntity(entityClass, name, entityId, Main.instance, 64, 1, true);
+		EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, mainColor, subColor));
+
+	}
 }

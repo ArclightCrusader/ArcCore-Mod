@@ -1,84 +1,78 @@
-[23:41:43] [main/INFO]: Setting user: Player234
-[23:41:44] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:41:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
-[23:41:50] [Sound Library Loader/INFO]: Sound engine started
-[23:41:58] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[23:41:58] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[23:41:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
-[23:41:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:41:59] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[23:42:00] [Sound Library Loader/INFO]: Sound engine started
-[23:42:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:42:15] [Server thread/INFO]: Generating keypair
-[23:42:15] [Server thread/INFO]: Preparing start region for level 0
-[23:42:16] [Server thread/INFO]: Changing view distance to 14, from 10
-[23:42:17] [Server thread/INFO]: Player234[local:E:9b23d36b] logged in with entity id 351 at (76.00929927387153, 125.90833941445233, -161.60743819191364)
-[23:42:17] [Server thread/INFO]: Player234 joined the game
-[23:42:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 104 ms
-[23:42:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 185 ms
-[23:42:25] [Server thread/INFO]: Player234 has just earned the achievement [Taking Inventory]
-[23:42:25] [Client thread/INFO]: [CHAT] Player234 has just earned the achievement [Taking Inventory]
-[23:42:27] [Client thread/INFO]: Warning: Clientside chunk ticking took 114 ms
-[23:42:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 154 ms
-[23:42:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 145 ms
-[23:42:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 104 ms
-[23:42:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 158 ms
-[23:42:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 237 ms
-[23:42:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 175 ms
-[23:42:40] [Client thread/INFO]: Warning: Clientside chunk ticking took 212 ms
-[23:42:40] [Client thread/INFO]: Warning: Clientside chunk ticking took 142 ms
-[23:42:41] [Client thread/INFO]: Warning: Clientside chunk ticking took 147 ms
-[23:42:42] [Client thread/INFO]: Warning: Clientside chunk ticking took 140 ms
-[23:42:43] [Server thread/INFO]: Saving and pausing game...
-[23:42:43] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Overworld
-[23:42:43] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Nether
-[23:42:43] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/The End
-[23:42:44] [Server thread/INFO]: Saving and pausing game...
-[23:42:44] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Overworld
-[23:42:44] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Nether
-[23:42:44] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/The End
-[23:43:00] [Client thread/INFO]: Warning: Clientside chunk ticking took 178 ms
-[23:43:01] [Client thread/INFO]: Warning: Clientside chunk ticking took 225 ms
-[23:43:03] [Client thread/INFO]: Warning: Clientside chunk ticking took 111 ms
-[23:43:09] [Client thread/INFO]: Warning: Clientside chunk ticking took 124 ms
-[23:43:12] [Client thread/INFO]: Warning: Clientside chunk ticking took 167 ms
-[23:43:13] [Client thread/INFO]: Warning: Clientside chunk ticking took 350 ms
-[23:43:14] [Client thread/INFO]: Warning: Clientside chunk ticking took 201 ms
-[23:43:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 230 ms
-[23:43:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 146 ms
-[23:43:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 114 ms
-[23:43:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 148 ms
-[23:43:22] [Client thread/INFO]: Warning: Clientside chunk ticking took 150 ms
-[23:43:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 378 ms
-[23:43:36] [Client thread/INFO]: Warning: Clientside chunk ticking took 170 ms
-[23:43:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 196 ms
-[23:43:38] [Client thread/INFO]: Warning: Clientside chunk ticking took 158 ms
-[23:43:45] [Client thread/INFO]: Warning: Clientside chunk ticking took 153 ms
-[23:43:48] [Client thread/INFO]: Warning: Clientside chunk ticking took 308 ms
-[23:43:50] [Client thread/INFO]: Warning: Clientside chunk ticking took 193 ms
-[23:43:52] [Client thread/INFO]: Warning: Clientside chunk ticking took 154 ms
-[23:43:52] [Client thread/INFO]: Warning: Clientside chunk ticking took 119 ms
-[23:43:56] [Client thread/INFO]: Warning: Clientside chunk ticking took 154 ms
-[23:44:06] [Client thread/INFO]: Warning: Clientside chunk ticking took 140 ms
-[23:44:10] [Client thread/INFO]: Warning: Clientside chunk ticking took 130 ms
-[23:44:14] [Client thread/INFO]: Warning: Clientside chunk ticking took 313 ms
-[23:44:23] [Client thread/INFO]: Warning: Clientside chunk ticking took 326 ms
-[23:44:33] [Client thread/INFO]: Warning: Clientside chunk ticking took 166 ms
-[23:44:51] [Client thread/INFO]: Warning: Clientside chunk ticking took 147 ms
-[23:45:39] [Client thread/INFO]: Warning: Clientside chunk ticking took 186 ms
-[23:45:48] [Client thread/INFO]: Warning: Clientside chunk ticking took 107 ms
-[23:46:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 125 ms
-[23:46:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 120 ms
-[23:46:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 152 ms
-[23:46:45] [Client thread/INFO]: Warning: Clientside chunk ticking took 219 ms
-[23:46:50] [Server thread/INFO]: Saving and pausing game...
-[23:46:50] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Overworld
-[23:46:50] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Nether
-[23:46:50] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/The End
-[23:46:50] [Server thread/INFO]: Stopping server
-[23:46:50] [Server thread/INFO]: Saving players
-[23:46:50] [Server thread/INFO]: Saving worlds
-[23:46:50] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Overworld
-[23:46:50] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/Nether
-[23:46:50] [Server thread/INFO]: Saving chunks for level 'Gilded Forest'/The End
-[23:46:52] [Client thread/INFO]: Stopping!
+[21:19:06] [main/INFO]: Setting user: Player203
+[21:19:06] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:19:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[21:19:14] [Sound Library Loader/INFO]: Sound engine started
+[21:19:23] [Client thread/WARN]: File arccore:sounds/nihil-say.ogg does not exist, cannot add it to event arccore:nihil-say
+[21:19:23] [Client thread/WARN]: File arccore:sounds/nihil-hurt.ogg does not exist, cannot add it to event arccore:nihil-hurt
+[21:19:23] [Client thread/WARN]: File arccore:sounds/nihil-death.ogg does not exist, cannot add it to event arccore:nihil-death
+[21:19:24] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:19:24] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:19:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[21:19:24] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:19:25] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[21:19:26] [Client thread/WARN]: File arccore:sounds/nihil-say.ogg does not exist, cannot add it to event arccore:nihil-say
+[21:19:26] [Client thread/WARN]: File arccore:sounds/nihil-hurt.ogg does not exist, cannot add it to event arccore:nihil-hurt
+[21:19:26] [Client thread/WARN]: File arccore:sounds/nihil-death.ogg does not exist, cannot add it to event arccore:nihil-death
+[21:19:26] [Sound Library Loader/INFO]: Sound engine started
+[21:19:28] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:19:28] [Server thread/INFO]: Generating keypair
+[21:19:28] [Server thread/INFO]: Preparing start region for level 0
+[21:19:29] [Server thread/INFO]: Changing view distance to 14, from 10
+[21:19:29] [Server thread/INFO]: Player203[local:E:7c91f4b0] logged in with entity id 435 at (439.8894257376651, 72.22591581978189, 82.01410483603354)
+[21:19:29] [Server thread/INFO]: Player203 joined the game
+[21:19:31] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:19:37] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:19:40] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:19:42] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:19:42] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:19:43] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:19:48] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:19:49] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:19:50] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-death
+[21:19:53] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:19:59] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:01] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:03] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:05] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:06] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:07] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:07] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-death
+[21:20:14] [Server thread/INFO]: [Player203: Set own game mode to Survival Mode]
+[21:20:14] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:20:14] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:15] [Server thread/INFO]: Player203 was slain by Nihilian Spririt
+[21:20:15] [Client thread/INFO]: [CHAT] Player203 was slain by Nihilian Spririt
+[21:20:16] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:23] [Server thread/INFO]: [Player203: Set own game mode to Creative Mode]
+[21:20:23] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:20:38] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:38] [Server thread/INFO]: Player203 has just earned the achievement [Getting Wood]
+[21:20:38] [Client thread/INFO]: [CHAT] Player203 has just earned the achievement [Getting Wood]
+[21:20:42] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:48] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:54] [Server thread/INFO]: [Player203: Set own game mode to Survival Mode]
+[21:20:54] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:20:54] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:56] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:57] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:20:57] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:58] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:59] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:20:59] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-hurt
+[21:21:00] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-say
+[21:21:01] [Client thread/WARN]: Unable to play empty soundEvent: arccore:nihil-death
+[21:21:08] [Client thread/WARN]: Unable to play unknown soundEvent: arccore:fairy-attack
+[21:21:09] [Client thread/WARN]: Unable to play unknown soundEvent: arccore:fairy-attack
+[21:21:11] [Server thread/INFO]: Player203 was burnt to a crisp whilst fighting Fairy
+[21:21:11] [Client thread/INFO]: [CHAT] Player203 was burnt to a crisp whilst fighting Fairy
+[21:21:20] [Server thread/INFO]: Saving and pausing game...
+[21:21:20] [Server thread/INFO]: Saving chunks for level 'Test World 1'/Overworld
+[21:21:20] [Server thread/INFO]: Saving chunks for level 'Test World 1'/Nether
+[21:21:20] [Server thread/INFO]: Saving chunks for level 'Test World 1'/The End
+[21:21:20] [Server thread/INFO]: Stopping server
+[21:21:20] [Server thread/INFO]: Saving players
+[21:21:20] [Server thread/INFO]: Saving worlds
+[21:21:20] [Server thread/INFO]: Saving chunks for level 'Test World 1'/Overworld
+[21:21:20] [Server thread/INFO]: Saving chunks for level 'Test World 1'/Nether
+[21:21:20] [Server thread/INFO]: Saving chunks for level 'Test World 1'/The End
+[21:21:21] [Client thread/INFO]: Stopping!

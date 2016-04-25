@@ -1,0 +1,7 @@
+package com.thearclightcrusader.ArcCore.items;
+
+import net.minecraft.item.Item;
+
+public class FairyDust extends Item {
+
+}

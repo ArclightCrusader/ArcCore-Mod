@@ -9,6 +9,10 @@ item.Cooked Bacon.name=Cooked Bacon
 tile.Leaf.Bacon.name=Emerald Leaf
 tile.Sapling.Bacon.name=Bacon Sapling
 
+entity.Cyclops.name=Cyclops
+entity.Nihil.name=Nihilian Spririt
+entity.Fairy.name=Fairy
+
 tile.ArcCoreLampOff.name=Arc Core Lamp
 tile.ArcCoreLampOn.name=Arc Core Lamp
 
@@ -114,6 +118,9 @@ item.AscendedIngot.name=Ingot of the Ascended
 item.PalladiumIngot.name=Palladium Ingot
 item.Moissanite.name=Moissanite
 item.InfusedQuartz.name=Infused Quartz
+item.CyclopsEye.name=Cyclops Eye
+item.NihilSoulShard.name=Nihilian Soul Shard
+item.FairyDust.name=Fairy Dust
 
 item.CalciumAcetate.name=Calcium Acetate
 item.FuelGel.name=Fuel Gel
