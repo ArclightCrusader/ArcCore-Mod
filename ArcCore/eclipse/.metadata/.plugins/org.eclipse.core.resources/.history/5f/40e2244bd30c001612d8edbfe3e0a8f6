@@ -1,0 +1,15 @@
+package com.thearclightcrusader.ArcCore.items;
+
+import com.thearclightcrusader.ArcCore.Main;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
+import net.minecraft.item.ItemSlab;
+
+public class ItemFairyStoneSlab extends ItemSlab{
+
+	public ItemFairyStoneSlab(Block block, Block blockS, Block blockS2, Boolean b){
+		super(block, Main.uFairyStoneSlab, Main.uFairyStoneSlabDouble, block == Main.uFairyStoneSlab);
+		
+	}
+}

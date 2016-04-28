@@ -84,12 +84,9 @@ public class EntityFairy extends EntityMob implements IRangedAttackMob {
 	    
 	    protected void dropRareDrop(int p_70600_1_)
 	    {
-	        switch (this.rand.nextInt(2))
+	        switch (this.rand.nextInt(1))
 	        {
 	            case 0:
-	                this.dropItem(Items.iron_ingot, 2);
-	                break;
-	            case 1:
 	                this.dropItem(Main.fairyDust, 1);
 	                break;
 	          

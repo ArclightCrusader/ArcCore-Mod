@@ -1,7 +1,0 @@
-package com.thearclightcrusader.ArcCore.tools;
-
-import net.minecraft.item.Item;
-
-public class MoissaniteHoe extends Item {
-
-}

@@ -28,6 +28,7 @@ public class ArcCoreInfuserRecipes {
 			return new ItemStack(Main.infusedQuartz);
 		}
 		
+		/**
 		//Stone + ingot = ore
 		if(item == Item.getItemFromBlock(Blocks.stone) && item2 == Items.iron_ingot || item2 == Item.getItemFromBlock(Blocks.stone) && item == Items.iron_ingot || item3 == Item.getItemFromBlock(Blocks.stone) && item2 == Items.iron_ingot || item2 == Item.getItemFromBlock(Blocks.stone) && item3 == Items.iron_ingot || item == Item.getItemFromBlock(Blocks.stone) && item3 == Items.iron_ingot || item3 == Item.getItemFromBlock(Blocks.stone) && item == Items.iron_ingot ){
 			return new ItemStack(Blocks.iron_ore);
@@ -52,7 +53,7 @@ public class ArcCoreInfuserRecipes {
 		if(item == Item.getItemFromBlock(Blocks.netherrack) && item2 == new ItemStack(Items.quartz, 4).getItem() || item2 == Item.getItemFromBlock(Blocks.netherrack) && item == new ItemStack(Items.quartz, 4).getItem() || item3 == Item.getItemFromBlock(Blocks.netherrack) && item2 == new ItemStack(Items.quartz, 4).getItem() || item2 == Item.getItemFromBlock(Blocks.netherrack) && item3 == new ItemStack(Items.quartz, 4).getItem() || item == Item.getItemFromBlock(Blocks.netherrack) && item3 == new ItemStack(Items.quartz, 4).getItem() || item3 == Item.getItemFromBlock(Blocks.netherrack) && item == new ItemStack(Items.quartz, 4).getItem()){
 			return new ItemStack(Blocks.quartz_ore);
 		}
-		
+		**/
 		//Chocolate cake
 		if(item == Item.getItemFromBlock(Blocks.cake) && item2 == Item.getItemFromBlock(Blocks.cocoa) || item2 == Item.getItemFromBlock(Blocks.cake) && item == Item.getItemFromBlock(Blocks.cocoa)  || item3 == Item.getItemFromBlock(Blocks.cake) && item2 == Item.getItemFromBlock(Blocks.cocoa)  || item2 == Item.getItemFromBlock(Blocks.cake) && item3 == Item.getItemFromBlock(Blocks.cocoa)  || item == Item.getItemFromBlock(Blocks.cake) && item3 == Item.getItemFromBlock(Blocks.cocoa)  || item3 == Item.getItemFromBlock(Blocks.cake) && item == Item.getItemFromBlock(Blocks.cocoa)){
 			return new ItemStack(Main.chocoCake);

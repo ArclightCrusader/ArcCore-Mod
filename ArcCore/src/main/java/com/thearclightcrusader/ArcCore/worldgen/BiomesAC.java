@@ -46,6 +46,7 @@ public class BiomesAC {
 		BiomeDictionary.registerBiomeType(biomeNihilLand, Type.CONIFEROUS);
 		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(biomeNihilLand, 10));
 		
+		/**
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.beach);
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.birchForest);
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.birchForestHills);
@@ -86,10 +87,11 @@ public class BiomesAC {
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.taiga);
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.taigaHills);
 		  
+		  **/
 		  BiomeManager.addSpawnBiome(biomeNihilLand);
-		  //BiomeManager.addSpawnBiome(biomeRedForest);
-		  //BiomeManager.addSpawnBiome(biomeGildedForest);
-		  //BiomeManager.addSpawnBiome(biomeFireLands);
+		  BiomeManager.addSpawnBiome(biomeRedForest);
+		  BiomeManager.addSpawnBiome(biomeGildedForest);
+		  BiomeManager.addSpawnBiome(biomeFireLands);
 		
 	}
 }

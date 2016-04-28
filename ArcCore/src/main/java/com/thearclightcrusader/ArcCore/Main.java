@@ -16,6 +16,10 @@ import com.thearclightcrusader.ArcCore.blocks.BaconSapling;
 import com.thearclightcrusader.ArcCore.blocks.BaconWood;
 import com.thearclightcrusader.ArcCore.blocks.ChocoCake;
 import com.thearclightcrusader.ArcCore.blocks.CrystalOre;
+import com.thearclightcrusader.ArcCore.blocks.FairyDirt;
+import com.thearclightcrusader.ArcCore.blocks.FairyGrass;
+import com.thearclightcrusader.ArcCore.blocks.FairyPlanks;
+import com.thearclightcrusader.ArcCore.blocks.FairyStone;
 import com.thearclightcrusader.ArcCore.blocks.FireStone;
 import com.thearclightcrusader.ArcCore.blocks.GildedDirt;
 import com.thearclightcrusader.ArcCore.blocks.GildedGrass;
@@ -28,6 +32,14 @@ import com.thearclightcrusader.ArcCore.blocks.GildedStoneBricks;
 import com.thearclightcrusader.ArcCore.blocks.MoissaniteOre;
 import com.thearclightcrusader.ArcCore.blocks.NihilBlock;
 import com.thearclightcrusader.ArcCore.blocks.PalladiumOre;
+import com.thearclightcrusader.ArcCore.blocks.UChiseledFairyStoneBricks;
+import com.thearclightcrusader.ArcCore.blocks.UChiseledGildedStoneBricks;
+import com.thearclightcrusader.ArcCore.blocks.UFairyStoneBricks;
+import com.thearclightcrusader.ArcCore.blocks.UFairyStoneSlab;
+import com.thearclightcrusader.ArcCore.blocks.UFairyStoneStairs;
+import com.thearclightcrusader.ArcCore.blocks.UGildedStoneBricks;
+import com.thearclightcrusader.ArcCore.blocks.UGildedStoneSlab;
+import com.thearclightcrusader.ArcCore.blocks.UGildedStoneStairs;
 import com.thearclightcrusader.ArcCore.entity.EntityCyclops;
 import com.thearclightcrusader.ArcCore.entity.EntityFairy;
 import com.thearclightcrusader.ArcCore.entity.EntityNihil;
@@ -47,6 +59,8 @@ import com.thearclightcrusader.ArcCore.items.EmeraldBacon;
 import com.thearclightcrusader.ArcCore.items.FairyDust;
 import com.thearclightcrusader.ArcCore.items.FuelGel;
 import com.thearclightcrusader.ArcCore.items.InfusedQuartz;
+import com.thearclightcrusader.ArcCore.items.ItemFairyStoneSlab;
+import com.thearclightcrusader.ArcCore.items.ItemGildedStoneSlab;
 import com.thearclightcrusader.ArcCore.items.ItemLeafBlocks;
 import com.thearclightcrusader.ArcCore.items.ItemLogBlocks;
 import com.thearclightcrusader.ArcCore.items.ItemSaplingBlocks;
@@ -94,10 +108,12 @@ import com.thearclightcrusader.ArcCore.tools.PalladiumAxe;
 import com.thearclightcrusader.ArcCore.tools.PalladiumHoe;
 import com.thearclightcrusader.ArcCore.tools.PalladiumPick;
 import com.thearclightcrusader.ArcCore.tools.PalladiumShovel;
+import com.thearclightcrusader.ArcCore.tools.PalladiumSword;
 import com.thearclightcrusader.ArcCore.worldgen.ArcCoreWorldGen;
 import com.thearclightcrusader.ArcCore.worldgen.BiomesAC;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -112,6 +128,7 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -184,7 +201,33 @@ public class Main
 	public static Block gildedStone = new GildedStone(Material.rock).setBlockName("GildedStone");
 	public static Block gildedPlanks = new GildedPlanks(Material.wood).setBlockName("GildedPlanks");
 	public static Block gildedStoneBricks = new GildedStoneBricks(Material.rock).setBlockName("GildedStoneBricks");
-    
+	
+	//Fairy Structure Blocks
+	
+	//public static Block fairySapling = new FairySapling().setBlockName("FairySapling").setCreativeTab(Main.arcCoreTab);
+	//public static Block fairyLeaf = new FairyLeaf().setBlockName("FairyLeaf").setCreativeTab(Main.arcCoreTab);
+	//public static Block fairyLog = new FairyLog().setBlockName("FairyLog").setCreativeTab(Main.arcCoreTab);
+	public static Block fairyGrass = new FairyGrass(Material.grass).setBlockName("FairyGrass");
+	public static Block fairyDirt = new FairyDirt(Material.ground).setBlockName("FairyDirt");
+	public static Block fairyStone = new FairyStone(Material.rock).setBlockName("FairyStone");
+	public static Block fairyPlanks = new FairyPlanks(Material.wood).setBlockName("FairyPlanks");
+	public static Block uFairyStoneBricks = new UFairyStoneBricks(Material.rock).setBlockName("UFairyStoneBricks");
+	public static Block uChiseledFairyStoneBricks = new UChiseledFairyStoneBricks(Material.rock).setBlockName("UChiseledFairyStoneBricks");
+	public static Block uFairyStoneStairs = new UFairyStoneStairs(Main.uFairyStoneBricks, 1).setBlockName("UFairyStoneStairs");
+	
+	public static Block uGildedStoneBricks = new UGildedStoneBricks(Material.rock).setBlockName("UGildedStoneBricks");
+	public static Block uChiseledGildedStoneBricks = new UChiseledGildedStoneBricks(Material.rock).setBlockName("UChiseledGildedStoneBricks");
+	public static Block uGildedStoneStairs = new UGildedStoneStairs(Main.uGildedStoneBricks, 1).setBlockName("UGildedStoneStairs");
+	
+	public static BlockSlab uFairyStoneSlab = new UFairyStoneSlab(false, Material.rock);
+	public static BlockSlab uFairyStoneSlabDouble = new UFairyStoneSlab(true, Material.rock);
+	public static BlockSlab uGildedStoneSlab = new UGildedStoneSlab(false, Material.rock);
+	public static BlockSlab uGildedStoneSlabDouble = new UGildedStoneSlab(true, Material.rock);
+	
+	public static Block uLightBlockPink = new ULightBlock(Material.glass, 0);
+	public static Block uLightBlockGold = new ULightBlock(Material.glass, 1);
+	
+
     //Machines
     public static Block arcCoreFurnaceIdle;
     public static Block arcCoreFurnaceActive;
@@ -342,6 +385,28 @@ public class Main
     	GameRegistry.registerBlock(gildedPlanks, "GildedPlanks");
     	GameRegistry.registerBlock(fireStone, "FireStone");
     	
+    	//GameRegistry.registerBlock(fairyLog, "FairyLog");
+    	//GameRegistry.registerBlock(fairyLeaf, "GildedLeaf");
+    	GameRegistry.registerBlock(fairyGrass, "FairyGrass");
+    	GameRegistry.registerBlock(fairyStone, "FairyStone");
+    	GameRegistry.registerBlock(uFairyStoneBricks, "uFairyStoneBricks");
+    	GameRegistry.registerBlock(uFairyStoneStairs, "uFairyStoneStairs");
+    	GameRegistry.registerBlock(uChiseledFairyStoneBricks, "uChiseledFairyStoneBricks");
+    	GameRegistry.registerBlock(fairyPlanks, "FairyPlanks");
+ 
+    	GameRegistry.registerBlock(uGildedStoneBricks, "uGildedStoneBricks");
+    	GameRegistry.registerBlock(uGildedStoneStairs, "uGildedStoneStairs");
+    	GameRegistry.registerBlock(uChiseledGildedStoneBricks, "uChiseledGildedStoneBricks");
+    	
+    	GameRegistry.registerBlock(uFairyStoneSlab, ItemFairyStoneSlab.class, "uFairyStoneSlab");
+    	GameRegistry.registerBlock(uFairyStoneSlabDouble, ItemFairyStoneSlab.class, "uFairyStoneSlabDouble");
+    	
+    	GameRegistry.registerBlock(uGildedStoneSlab, ItemGildedStoneSlab.class, "uGildedStoneSlab");
+    	GameRegistry.registerBlock(uGildedStoneSlabDouble, ItemGildedStoneSlab.class, "uGildedStoneSlabDouble");
+    	
+    	GameRegistry.registerBlock(uLightBlockPink, "LightBlockPink");
+    	GameRegistry.registerBlock(uLightBlockGold, "LightBlockGold");
+    	
     	//Machine Registry
     	GameRegistry.registerBlock(arcCoreFurnaceIdle, "ArcCoreFurnaceIdle");
     	GameRegistry.registerBlock(arcCoreFurnaceActive, "ArcCoreFurnaceActive");
@@ -455,7 +520,7 @@ public class Main
     	GameRegistry.registerItem(moissaniteBoots, "MoissaniteBoots");
     	
     	//Recipes
-    	GameRegistry.addShapedRecipe(new ItemStack(Main.baconLeaf), " X ", "XYX", " X ", 'X', Items.emerald, 'Y', Blocks.leaves);
+    	GameRegistry.addShapedRecipe(new ItemStack(Main.baconLeaf, 2), " X ", "XYX", " X ", 'X', Items.emerald, 'Y', Blocks.leaves);
     	GameRegistry.addShapedRecipe(new ItemStack(Main.baconSapling), "PEP", "DSD", "PEP", 'P', Items.porkchop, 'E', Main.baconLeaf, 'D', Items.emerald, 'S', Blocks.sapling);
     	GameRegistry.addShapelessRecipe(new ItemStack(Main.baconBeer), Main.baconRoot, Items.potionitem);
     	GameRegistry.addShapelessRecipe(new ItemStack(Main.emeraldBacon), Items.emerald, Items.porkchop, Items.emerald);
@@ -469,6 +534,10 @@ public class Main
     	GameRegistry.addShapedRecipe(new ItemStack(Main.arcCore), "XYX", "YZY", "XDX", 'X', Items.redstone  , 'Y', Blocks.glass, 'D', Main.palladiumIngot, 'Z', Items.diamond);
     	GameRegistry.addShapelessRecipe(new ItemStack(Main.arclightIngot), Items.iron_ingot, Main.arcCore, Main.arcDiamond);
     	GameRegistry.addShapedRecipe(new ItemStack(Main.protoArcCore), "XYX", "YZY", "XDX", 'X', Blocks.obsidian, 'Y', Main.infusedQuartz, 'Z', Main.arcCore, 'D', Main.arcDiamond);
+    	GameRegistry.addShapedRecipe(new ItemStack(Main.arcCoreFurnaceIdle), "XXX", "XYX", "XXX", 'X', Blocks.cobblestone, 'Y', Main.arcCore);
+    	GameRegistry.addShapedRecipe(new ItemStack(Main.arcCoreInfuserIdle), "XXX", "ZYZ", "VVV", 'X', Blocks.furnace, 'Y', Main.arcCore, 'Z', Blocks.redstone_block, 'V', Items.iron_ingot);
+    	GameRegistry.addShapelessRecipe(new ItemStack(Main.calciumAcetate), Items.egg, Items.bone, Items.potionitem);
+    	GameRegistry.addShapelessRecipe(new ItemStack(Main.calciumAcetate), Items.egg, Items.bone, Items.water_bucket);
     	
     	GameRegistry.addShapedRecipe(new ItemStack(Main.baconHelm), "XXX", "X X", "   ", 'X', Main.emeraldBacon);
     	GameRegistry.addShapedRecipe(new ItemStack(Main.baconHelm), "   ", "XXX", "X X", 'X', Main.emeraldBacon);
@@ -609,4 +678,5 @@ public class Main
     public void load(FMLInitializationEvent event){
     	proxy.registerRenderers();
     }
+
 }

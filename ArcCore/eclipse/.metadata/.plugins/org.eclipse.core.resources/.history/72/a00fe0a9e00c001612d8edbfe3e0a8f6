@@ -1,0 +1,17 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class ULightBlockPink extends Block {
+
+	public ULightBlockPink(Material glass) {
+		super(Material.glass);
+		this.setHardness(-1F);
+		this.setResistance(999F);
+		this.setBlockName("LightBlockPink");
+		this.setBlockTextureName("LightBlockPink");
+		this.setLightLevel(0.75F);
+	}
+
+}

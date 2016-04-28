@@ -1,7 +1,0 @@
-package com.thearclightcrusader.ArcCore;
-
-import net.minecraft.block.Block;
-
-public class PalladiumOre extends Block {
-
-}

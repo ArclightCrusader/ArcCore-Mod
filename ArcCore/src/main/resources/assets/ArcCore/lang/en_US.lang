@@ -9,6 +9,19 @@ item.Cooked Bacon.name=Cooked Bacon
 tile.Leaf.Bacon.name=Emerald Leaf
 tile.Sapling.Bacon.name=Bacon Sapling
 
+tile.UFairyStoneBricks.name=Fairy Stone Bricks(Dungeon)
+tile.UChiseledFairyStoneBricks.name=Fairy Chiseled Stone Bricks(Dungeon)
+tile.UFairyStoneStairs.name=Fairy Stone Stairs(Dungeon)
+tile.UFairyStoneSlab.name=Fairy Stone Slab(Dungeon)
+
+tile.UGildedStoneBricks.name=Gilded Stone Bricks(Dungeon)
+tile.UChiseledGildedStoneBricks.name=Gilded Chiseled Stone Bricks(Dungeon)
+tile.UGildedStoneStairs.name=Gilded Stone Stairs(Dungeon)
+tile.UGildedStoneSlab.name=Gilded Stone Slab(Dungeon)
+
+tile.LightBlockPink.name=Light Block Pink(Dungeon)
+tile.LightBlockGold.name=Light Block Gold(Dungeon)
+
 entity.Cyclops.name=Cyclops
 entity.Nihil.name=Nihilian Spririt
 entity.Fairy.name=Fairy

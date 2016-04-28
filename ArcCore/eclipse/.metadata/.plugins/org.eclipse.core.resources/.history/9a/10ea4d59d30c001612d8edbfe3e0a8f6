@@ -1,0 +1,18 @@
+package com.thearclightcrusader.ArcCore.items;
+
+import com.thearclightcrusader.ArcCore.Main;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
+import net.minecraft.item.ItemSlab;
+
+public class ItemFairyStoneSlab extends ItemSlab{
+
+	public ItemFairyStoneSlab(Block block, BlockSlab blockS, BlockSlab blockS2, boolean b) {
+		super(block, Main.uFairyStoneSlab, blockS2, b);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	}
+}

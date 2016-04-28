@@ -1,0 +1,13 @@
+package com.thearclightcrusader.ArcCore;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockStairs;
+import net.minecraft.block.material.Material;
+
+public class UFairyStoneStairs extends BlockStairs{
+
+	public UFairyStoneStairs(Block block, int i) {
+		super(block , i);
+	}
+
+}

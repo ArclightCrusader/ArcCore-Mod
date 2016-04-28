@@ -253,7 +253,7 @@ public class EntityNihil extends EntityMob {
 
 	    protected String getDeathSound()
 	    {
-	        return References.MODID + ":nihil-death";
+	        return References.MODID + ":nihil-say";
 	    }
 
 	    protected void func_145780_a(int p_145780_1_, int p_145780_2_, int p_145780_3_, Block p_145780_4_)
