@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemAxe"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemSpade"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemHoe"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary"/>
@@ -50,14 +49,15 @@
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemSlab"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockSlab"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPostInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemBlock"/>
 <fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.blocks.UGildedStoneBricks"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.Main"/>
 <fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.blocks.UFairyStoneStairs"/>
 <fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.blocks.UGildedStoneStairs"/>
 <fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.proxy.References"/>
+<fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.Main"/>
+<fullyQualifiedTypeName name="com.thearclightcrusader.ArcCore.blocks.ULightBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemSlab"/>
 </qualifiedTypeNameHistroy>

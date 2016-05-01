@@ -1,0 +1,13 @@
+package com.thearclightcrusader.ArcCore.blocks;
+
+import net.minecraft.block.BlockSlab;
+
+public class USapphireStoneSlab extends BlockSlab {
+
+	@Override
+	public String func_150002_b(int p_150002_1_) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

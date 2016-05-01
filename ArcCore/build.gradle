@@ -23,7 +23,7 @@ archivesBaseName = "ArcCore"
 
 sourceSets {
     main {
-        java { srcDirs = ["$project/src/java"] }
+        java { srcDirs = ["$project/src/main/java"] }
         resources { srcDirs = ["$project/src/resources"] }
     }
 }

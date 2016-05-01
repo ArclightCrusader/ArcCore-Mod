@@ -19,6 +19,31 @@ tile.UChiseledGildedStoneBricks.name=Gilded Chiseled Stone Bricks(Dungeon)
 tile.UGildedStoneStairs.name=Gilded Stone Stairs(Dungeon)
 tile.UGildedStoneSlab.name=Gilded Stone Slab(Dungeon)
 
+tile.UEmeraldStoneBricks.name=Emerald Stone Bricks(Dungeon)
+tile.UChiseledEmeraldStoneBricks.name=Emerald Chiseled Stone Bricks(Dungeon)
+tile.UEmeraldBrickStairs.name=Emerald Stone Stairs(Dungeon)
+tile.UEmeraldStoneSlab.name=Emerald Stone Slab(Dungeon)
+
+tile.USapphireStoneBricks.name=Sapphire Stone Bricks(Dungeon)
+tile.UChiseledSapphireStoneBricks.name=Sapphire Chiseled Stone Bricks(Dungeon)
+tile.USapphireBrickStairs.name=Sapphire Stone Stairs(Dungeon)
+tile.USapphireStoneSlab.name=Sapphire Stone Slab(Dungeon)
+
+tile.UPlatinumStoneBricks.name=Platinum Stone Bricks(Dungeon)
+tile.UChiseledPlatinumStoneBricks.name=Platinum Chiseled Stone Bricks(Dungeon)
+tile.UPlatinumBrickStairs.name=Platinum Stone Stairs(Dungeon)
+tile.UPlatinumStoneSlab.name=Platinum Stone Slab(Dungeon)
+
+tile.UWhiteStoneBricks.name=White Stone Bricks(Dungeon)
+tile.UChiseledWhiteStoneBricks.name=White Chiseled Stone Bricks(Dungeon)
+tile.UWhiteStoneStairs.name=White Stone Stairs(Dungeon)
+tile.UWhiteStoneSlab.name=White Stone Slab(Dungeon)
+
+tile.UBlackStoneBricks.name=Black Stone Bricks(Dungeon)
+tile.UChiseledBlackStoneBricks.name=Black Chiseled Stone Bricks(Dungeon)
+tile.UBlackStoneStairs.name=Black Stone Stairs(Dungeon)
+tile.UBlackStoneSlab.name=Black Stone Slab(Dungeon)
+
 tile.LightBlockPink.name=Light Block Pink(Dungeon)
 tile.LightBlockGold.name=Light Block Gold(Dungeon)
 

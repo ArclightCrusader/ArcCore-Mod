@@ -1,5 +1,0 @@
-package com.thearclightcrusader.ArcCore.worldgen.decorator;
-
-public class DeferredBiomeDecoratorFire {
-
-}

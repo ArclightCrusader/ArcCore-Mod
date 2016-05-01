@@ -1,6 +1,0 @@
-{
-"cyclops-say": {"category": "master", "sounds": ["cyclops-say"]},
-"cyclops-hurt":{"category": "master", "sounds": ["cyclops-hurt"]},
-"cyclops-death":{"category": "master", "sounds": ["cyclops-death"]}
-
-}

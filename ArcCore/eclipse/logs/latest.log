@@ -1,31 +1,39 @@
-[18:41:15] [main/INFO]: Setting user: Player79
-[18:41:16] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:41:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
-[18:41:22] [Client thread/WARN]: File arccore:sounds/nihil-death.ogg does not exist, cannot add it to event arccore:nihil-death
-[18:41:22] [Sound Library Loader/INFO]: Sound engine started
-[18:41:22] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:41:22] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:41:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
-[18:41:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:41:22] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[18:41:23] [Client thread/WARN]: File arccore:sounds/nihil-death.ogg does not exist, cannot add it to event arccore:nihil-death
-[18:41:23] [Sound Library Loader/INFO]: Sound engine started
-[18:41:33] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:41:33] [Server thread/INFO]: Generating keypair
-[18:41:33] [Server thread/INFO]: Preparing start region for level 0
-[18:41:34] [Server thread/INFO]: Changing view distance to 14, from 10
-[18:41:34] [Server thread/INFO]: Player79[local:E:3c819bd0] logged in with entity id 233 at (24.820269893201825, 64.24910851857099, -169.13251476837965)
-[18:41:34] [Server thread/INFO]: Player79 joined the game
-[18:41:35] [Server thread/INFO]: Player79 has just earned the achievement [Taking Inventory]
-[18:41:35] [Client thread/INFO]: [CHAT] Player79 has just earned the achievement [Taking Inventory]
-[18:42:06] [Server thread/INFO]: Saving and pausing game...
-[18:42:06] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Overworld
-[18:42:06] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Nether
-[18:42:06] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/The End
-[18:42:07] [Server thread/INFO]: Stopping server
-[18:42:07] [Server thread/INFO]: Saving players
-[18:42:07] [Server thread/INFO]: Saving worlds
-[18:42:07] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Overworld
-[18:42:07] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Nether
-[18:42:07] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/The End
-[18:42:08] [Client thread/INFO]: Stopping!
+[10:12:16] [main/INFO]: Setting user: Player640
+[10:12:16] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:12:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[10:12:22] [Sound Library Loader/INFO]: Sound engine started
+[10:12:28] [Client thread/WARN]: File arccore:sounds/nihil-death.ogg does not exist, cannot add it to event arccore:nihil-death
+[10:12:28] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:12:28] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[10:12:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:arccore
+[10:12:29] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:12:29] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[10:12:30] [Sound Library Loader/INFO]: Sound engine started
+[10:12:30] [Client thread/WARN]: File arccore:sounds/nihil-death.ogg does not exist, cannot add it to event arccore:nihil-death
+[10:12:36] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:12:36] [Server thread/INFO]: Generating keypair
+[10:12:36] [Server thread/INFO]: Preparing start region for level 0
+[10:12:37] [Server thread/INFO]: Changing view distance to 14, from 10
+[10:12:37] [Server thread/INFO]: Player640[local:E:eb4d9d59] logged in with entity id 235 at (31.588870951955695, 72.15606373095683, -173.5753866109095)
+[10:12:37] [Server thread/INFO]: Player640 joined the game
+[10:12:39] [Server thread/INFO]: Player640 has just earned the achievement [Taking Inventory]
+[10:12:39] [Client thread/INFO]: [CHAT] Player640 has just earned the achievement [Taking Inventory]
+[10:13:00] [Server thread/INFO]: Saving and pausing game...
+[10:13:00] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Overworld
+[10:13:00] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Nether
+[10:13:00] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/The End
+[10:13:23] [Server thread/INFO]: Saving and pausing game...
+[10:13:23] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Overworld
+[10:13:23] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Nether
+[10:13:23] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/The End
+[10:13:54] [Server thread/INFO]: Saving and pausing game...
+[10:13:54] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Overworld
+[10:13:54] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Nether
+[10:13:54] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/The End
+[10:13:54] [Server thread/INFO]: Stopping server
+[10:13:54] [Server thread/INFO]: Saving players
+[10:13:54] [Server thread/INFO]: Saving worlds
+[10:13:54] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Overworld
+[10:13:54] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/Nether
+[10:13:54] [Server thread/INFO]: Saving chunks for level 'Test Biome 2'/The End
+[10:13:55] [Client thread/INFO]: Stopping!
