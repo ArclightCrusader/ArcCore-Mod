@@ -3,10 +3,12 @@ package com.thearclightcrusader.ArcCore.worldgen;
 import java.util.Random;
 
 import com.thearclightcrusader.ArcCore.Main;
+import com.thearclightcrusader.ArcCore.worldgen.structures.StructureWayshrine;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 
@@ -30,10 +32,21 @@ public class ArcCoreWorldGen implements IWorldGenerator{
 
 	private void generateSuface(World world, Random random, int x, int z) {
 		//this.addOreSpawn(Main.ore, world, random, x=blockXPos, z=blockZPos, maxX, maxZ, minVein Size + random.nextInt(maxSize), chance, minY, MaxY);
-		this.addOreSpawn(Main.palladiumOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 27, 5, 50);
+		this.addOreSpawn(Main.palladiumOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 30, 5, 50);
 		this.addOreSpawn(Main.moissaniteOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 12, 3, 16);
 		this.addOreSpawn(Main.ascendedOre, world, random, x, z, 16, 16, 1 + random.nextInt(2), 7, 2, 15);
 
+		BiomeGenBase biome = world.getWorldChunkManager().getBiomeGenAt(x, z);
+		
+		for(int a = 0; a < 1; a++){
+			int i = x + random.nextInt(50);
+			int j = z + random.nextInt(50);
+			int k = world.getHeightValue(i, j);
+			
+			new StructureWayshrine().generate(world, random, i, j, k);
+		}
+		
+		
 	}
 
 	private void generateNether(World world, Random random, int x, int z) {

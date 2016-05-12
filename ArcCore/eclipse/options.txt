@@ -12,7 +12,7 @@ advancedOpengl:false
 maxFps:120
 fboEnable:true
 difficulty:1
-fancyGraphics:true
+fancyGraphics:false
 ao:2
 clouds:false
 resourcePacks:[]

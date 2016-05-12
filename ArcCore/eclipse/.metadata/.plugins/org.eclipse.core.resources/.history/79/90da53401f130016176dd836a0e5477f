@@ -1,0 +1,13 @@
+package com.thearclightcrusader.ArcCore.dimensions;
+
+import net.minecraft.world.WorldProvider;
+
+public class WorldProviderFairy extends WorldProvider{
+
+
+	public String getDimensionName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

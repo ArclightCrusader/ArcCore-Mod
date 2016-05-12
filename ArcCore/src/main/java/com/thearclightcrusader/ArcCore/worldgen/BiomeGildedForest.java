@@ -14,6 +14,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.event.terraingen.DeferredBiomeDecorator;
 
 public class BiomeGildedForest extends BiomeGenBase{
@@ -30,7 +31,7 @@ public class BiomeGildedForest extends BiomeGenBase{
 	    this.theBiomeDecorator.treesPerChunk = 12;
 	    this.theBiomeDecorator.deadBushPerChunk = 5;
 	    this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityWolf.class, 10, 3, 5));
-		
+	    
 	}
 	
 	@Override

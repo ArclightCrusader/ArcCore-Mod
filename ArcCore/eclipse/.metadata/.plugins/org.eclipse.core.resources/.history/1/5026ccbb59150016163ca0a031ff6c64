@@ -1,0 +1,56 @@
+package com.thearclightcrusader.ArcCore.dimensions;
+
+import com.thearclightcrusader.ArcCore.worldgen.BiomesAC;
+
+import net.minecraft.world.WorldProvider;
+import net.minecraft.world.biome.WorldChunkManager;
+import net.minecraft.world.biome.WorldChunkManagerHell;
+import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraftforge.common.BiomeManager;
+
+public class WorldProviderFairy extends WorldProvider{
+	
+	public WorldProviderFairy(){
+		this.dimensionId = DimensionRegistry.dimensionId;
+	}
+	
+	public void registerWorldChunkManager(){
+		this.worldChunkMgr = new WorldChunkManagerHell(BiomesAC.biomeGildedPlains, 1.2F);
+		this.dimensionId = DimensionRegistry.dimensionId;
+	}
+	
+	public IChunkProvider createChunkGeneration(){
+		return new ChunkProviderFairy(worldObj, dimensionId, hasNoSky);
+	}
+	
+	@Override
+	public boolean canCoordinateBeSpawn(int x, int z)
+	{
+		return true;
+	}
+	
+	public String getDimensionName() {
+		return "Fairy World";
+	}
+	
+	@Override
+	public String getSaveFolder()
+	{
+		return getDimensionName();
+	}
+	
+	@Override
+	public String getWelcomeMessage()
+	{
+		return "Welcome to the Land of Wonders";
+	}
+
+	@Override
+	public String getDepartMessage()
+	{
+		return "Leaving the " + getDimensionName();
+	}
+	
+	
+	
+}

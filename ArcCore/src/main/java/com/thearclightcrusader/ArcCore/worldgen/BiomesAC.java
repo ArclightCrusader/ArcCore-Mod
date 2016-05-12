@@ -14,6 +14,11 @@ public class BiomesAC {
 	public static BiomeGenBase biomeGildedForest;
 	public static BiomeGenBase biomeGildedPlains;
 	public static BiomeGenBase biomeNihilLand;
+	public static BiomeGenBase biomeIceMountains;
+	public static BiomeGenBase iceFairyPlains;
+	public static BiomeGenBase fairyPlains;
+	public static BiomeGenBase fairyForest;
+	public static BiomeGenBase fairyHills;
 
 	public static void init(){
 		registerBiomes();
@@ -45,6 +50,31 @@ public class BiomesAC {
 		biomeNihilLand = new BiomeNihilLand(82).setBiomeName("Land of the Nihil");
 		BiomeDictionary.registerBiomeType(biomeNihilLand, Type.CONIFEROUS);
 		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(biomeNihilLand, 10));
+		
+		//FairyPlains
+		fairyPlains = new BiomeFairyPlains(83).setBiomeName("Fairy Plains");
+		BiomeDictionary.registerBiomeType(fairyPlains, Type.PLAINS);
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(fairyPlains, 10));
+		
+		//FairyForest
+		fairyForest = new BiomeNihilLand(84).setBiomeName("Fairy Forest");
+		BiomeDictionary.registerBiomeType(fairyForest, Type.CONIFEROUS);
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(fairyForest, 10));
+		
+		//FairyHills
+		fairyHills = new BiomeNihilLand(85).setBiomeName("Fairy Hills");
+		BiomeDictionary.registerBiomeType(fairyHills, Type.CONIFEROUS);
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(fairyHills, 10));
+		
+		//IceFairyPlains
+		iceFairyPlains = new BiomeNihilLand(86).setBiomeName("Ice Fairy Plains");
+		BiomeDictionary.registerBiomeType(iceFairyPlains, Type.CONIFEROUS);
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(iceFairyPlains, 10));
+		
+		//IceMountains
+		biomeIceMountains = new BiomeIceMountains(87).setBiomeName("Ice Mountains");
+		BiomeDictionary.registerBiomeType(biomeIceMountains, Type.MOUNTAIN);
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(biomeIceMountains, 10));
 		
 		/**
 		  BiomeManager.removeSpawnBiome(BiomeGenBase.beach);

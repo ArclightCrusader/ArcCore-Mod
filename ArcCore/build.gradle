@@ -21,13 +21,6 @@ version = "1.0.1"
 group= "com.thearclightcrusader.arccore" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "ArcCore"
 
-sourceSets {
-    main {
-        java { srcDirs = ["$project/src/main/java"] }
-        resources { srcDirs = ["$project/src/resources"] }
-    }
-}
-
 minecraft {
     version = "1.7.10-10.13.4.1558-1.7.10"
     runDir = "eclipse/assets"
@@ -60,7 +53,7 @@ processResources
         include 'mcmod.info'
 
         // replace version and mcversion
-        expand '1.0':project.version, '1.7.10':project.minecraft.version
+        expand 'version':project.version, 'mcversion':project.minecraft.version
     }
 
     // copy everything else, thats not the mcmod.info

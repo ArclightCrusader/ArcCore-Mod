@@ -19,6 +19,7 @@ import com.thearclightcrusader.ArcCore.blocks.CrystalOre;
 import com.thearclightcrusader.ArcCore.blocks.FairyDirt;
 import com.thearclightcrusader.ArcCore.blocks.FairyGrass;
 import com.thearclightcrusader.ArcCore.blocks.FairyPlanks;
+import com.thearclightcrusader.ArcCore.blocks.FairyRitualStone;
 import com.thearclightcrusader.ArcCore.blocks.FairyStone;
 import com.thearclightcrusader.ArcCore.blocks.FireStone;
 import com.thearclightcrusader.ArcCore.blocks.GildedDirt;
@@ -43,6 +44,8 @@ import com.thearclightcrusader.ArcCore.blocks.ULightBlock;
 import com.thearclightcrusader.ArcCore.blocks.UPlatinumStoneSlab;
 import com.thearclightcrusader.ArcCore.blocks.USapphireStoneSlab;
 import com.thearclightcrusader.ArcCore.blocks.UWhiteStoneSlab;
+import com.thearclightcrusader.ArcCore.dimensions.FairyPortal;
+import com.thearclightcrusader.ArcCore.dimensions.WorldProviderFairy;
 import com.thearclightcrusader.ArcCore.entity.EntityCyclops;
 import com.thearclightcrusader.ArcCore.entity.EntityFairy;
 import com.thearclightcrusader.ArcCore.entity.EntityNihil;
@@ -70,6 +73,7 @@ import com.thearclightcrusader.ArcCore.items.ItemLeafBlocks;
 import com.thearclightcrusader.ArcCore.items.ItemLogBlocks;
 import com.thearclightcrusader.ArcCore.items.ItemPlatinumStoneSlab;
 import com.thearclightcrusader.ArcCore.items.ItemSaplingBlocks;
+import com.thearclightcrusader.ArcCore.items.ItemSapphireStoneSlab;
 import com.thearclightcrusader.ArcCore.items.ItemWhiteStoneSlab;
 import com.thearclightcrusader.ArcCore.items.Moissanite;
 import com.thearclightcrusader.ArcCore.items.NihilSoulShard;
@@ -129,6 +133,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -151,6 +156,8 @@ public class Main
     
     @SidedProxy(clientSide = "com.thearclightcrusader.ArcCore.proxy.ProxyClient", serverSide = "com.thearclightcrusader.ArcCore.proxy.ProxyCommon")
     public static ProxyCommon proxy;
+    
+    public static final int fairyDimId = 69;
     
     ArcCoreWorldGen eventWorldGen = new ArcCoreWorldGen();
     
@@ -209,7 +216,7 @@ public class Main
 	public static Block gildedPlanks = new GildedPlanks(Material.wood).setBlockName("GildedPlanks");
 	public static Block gildedStoneBricks = new GildedStoneBricks(Material.rock).setBlockName("GildedStoneBricks");
 	
-	//Fairy Structure Blocks
+//Fairy Structure Blocks
 	
 	//public static Block fairySapling = new FairySapling().setBlockName("FairySapling").setCreativeTab(Main.arcCoreTab);
 	//public static Block fairyLeaf = new FairyLeaf().setBlockName("FairyLeaf").setCreativeTab(Main.arcCoreTab);
@@ -276,11 +283,13 @@ public class Main
 	public static Block uLightBlockPink = new ULightBlock(Material.glass, 0);
 	public static Block uLightBlockGold = new ULightBlock(Material.glass, 1);
 	
+	//Portals
+	public static Block fairyPortal = new FairyPortal();
+	public static Block fairyRitualStone = new FairyRitualStone(Material.rock);
 
-    //Machines
+	//Machines
     public static Block arcCoreFurnaceIdle;
-    public static Block arcCoreFurnaceActive;
-    
+    public static Block arcCoreFurnaceActive;  
     public static Block arcCoreInfuserIdle;
     public static Block arcCoreInfuserActive;
     public static final int getIDArcCoreInfuser = 1;
@@ -392,6 +401,9 @@ public class Main
     	
     	BiomesAC.init();
     	
+    	DimensionManager.registerProviderType(Main.fairyDimId, WorldProviderFairy.class, false);
+    	DimensionManager.registerDimension(Main.fairyDimId, Main.fairyDimId);
+    	
     	//Entities
     	EntityHandler.registerMonsters(EntityCyclops.class, "Cyclops", 50, 78, 1, 3);
     	EntityHandler.registerMonsters(EntityNihil.class, "Nihil", 25, 82, 1, 2);
@@ -498,6 +510,10 @@ public class Main
     	
     	GameRegistry.registerBlock(arcCoreInfuserIdle, "ArcCoreInfuserIdle");
     	GameRegistry.registerBlock(arcCoreInfuserActive, "ArcCoreInfuserActive");
+    	
+    	//Portal Blocks
+    	GameRegistry.registerBlock(fairyRitualStone, "FairyRitualStone");
+    	GameRegistry.registerBlock(fairyPortal, "FairyPortal");
     	
     	//Item Registry
     	GameRegistry.registerItem(bacon, "Bacon");

@@ -1,0 +1,41 @@
+package com.thearclightcrusader.ArcCore.dimensions;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.thearclightcrusader.ArcCore.worldgen.BiomeFairyPlains;
+import com.thearclightcrusader.ArcCore.worldgen.BiomeFireLands;
+import com.thearclightcrusader.ArcCore.worldgen.BiomesAC;
+
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.biome.WorldChunkManager;
+import net.minecraft.world.biome.WorldChunkManagerHell;
+import scala.collection.concurrent.Debug;
+
+public class WorldChunkManagerFairy extends WorldChunkManagerHell {
+	
+	private BiomeGenBase biomeGenerator;
+	private BiomeGenBase biomeFairy;
+	private BiomeGenBase biomeIce;
+	private int radius = 250;
+
+	  public WorldChunkManagerFairy(BiomeGenBase biome, BiomeGenBase biome2, float f) {
+		  super(biome, f);
+		  this.biomeFairy = biome;
+		  this.biomeIce = biome2;
+	}
+	  
+	  public BiomeGenBase getBiomeGenAt(int x, int z)
+	    {
+		  if((x * x) + (z * z) == radius * radius){
+			  Debug.log("Mountains");
+			  System.out.print("Working");
+			  return BiomesAC.biomeIceMountains;
+			  
+			  
+		  }else{
+			  System.out.print("Not Working");
+			  return BiomesAC.biomeGildedForest;
+		  }
+	    }
+}

@@ -1,0 +1,13 @@
+package com.thearclightcrusader.ArcCore.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class FairyRitualStone extends Block {
+
+	public FairyRitualStone(Material material) {
+		super(Material.rock);
+		// TODO Auto-generated constructor stub
+	}
+
+}

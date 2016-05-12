@@ -1,0 +1,26 @@
+package com.thearclightcrusader.ArcCore.dimensions;
+
+import com.thearclightcrusader.ArcCore.worldgen.BiomesAC;
+
+import net.minecraft.world.WorldProvider;
+import net.minecraft.world.biome.WorldChunkManager;
+import net.minecraft.world.biome.WorldChunkManagerHell;
+import net.minecraft.world.chunk.IChunkProvider;
+
+public class WorldProviderFairy extends WorldProvider{
+	
+	public void registerWorldChunkManager(){
+		this.worldChunkMgr = new WorldChunkManagerHell(BiomesAC.biomeGildedPlains, 1.2F);
+		this.dimensionId = DimensionRegistry.dimensionId;
+	}
+	
+	public IChunkProvider createChunkGeneration(){
+		return null;
+	}
+	
+	public String getDimensionName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

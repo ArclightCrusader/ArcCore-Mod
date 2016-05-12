@@ -1,0 +1,18 @@
+package com.thearclightcrusader.ArcCore.dimensions;
+
+import net.minecraftforge.common.DimensionManager;
+
+public class DimensionRegistry {
+
+	public static void mainRegistry(){
+		registerDimension();
+	}
+	
+	public static final int dimensionId = 7;
+	
+	public static void registerDimension(){
+		DimensionManager.registerProviderType(dimensionId, WorldProviderFairy, false);
+		DimensionManager.registerDimension(dimensionId, dimensionId);
+		
+	}
+}

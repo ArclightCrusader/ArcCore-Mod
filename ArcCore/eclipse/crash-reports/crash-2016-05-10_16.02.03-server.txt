@@ -1,0 +1,128 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 5/10/16 4:02 PM
+Description: Exception generating new chunk
+
+java.lang.NullPointerException: Exception generating new chunk
+	at net.minecraft.world.gen.MapGenCaves.isTopBlock(MapGenCaves.java:259)
+	at net.minecraft.world.gen.MapGenCaves.func_151541_a(MapGenCaves.java:179)
+	at net.minecraft.world.gen.MapGenCaves.func_151538_a(MapGenCaves.java:235)
+	at net.minecraft.world.gen.MapGenBase.func_151539_a(MapGenBase.java:33)
+	at net.minecraft.world.gen.ChunkProviderGenerate.provideChunk(ChunkProviderGenerate.java:232)
+	at net.minecraft.world.gen.ChunkProviderServer.originalLoadChunk(ChunkProviderServer.java:190)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:149)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:119)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:221)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:482)
+	at net.minecraft.world.World.getBlock(World.java:387)
+	at com.thearclightcrusader.ArcCore.dimensions.TeleporterFairy.placeInExistingPortal(TeleporterFairy.java:127)
+	at com.thearclightcrusader.ArcCore.dimensions.TeleporterFairy.placeInPortal(TeleporterFairy.java:52)
+	at net.minecraft.server.management.ServerConfigurationManager.transferEntityToWorld(ServerConfigurationManager.java:638)
+	at net.minecraft.server.management.ServerConfigurationManager.transferPlayerToDimension(ServerConfigurationManager.java:542)
+	at com.thearclightcrusader.ArcCore.dimensions.FairyPortal.onEntityCollidedWithBlock(FairyPortal.java:93)
+	at net.minecraft.entity.Entity.func_145775_I(Entity.java:962)
+	at net.minecraft.entity.Entity.moveEntity(Entity.java:895)
+	at net.minecraft.network.NetHandlerPlayServer.processPlayer(NetHandlerPlayServer.java:367)
+	at net.minecraft.network.play.client.C03PacketPlayer.processPacket(C03PacketPlayer.java:37)
+	at net.minecraft.network.play.client.C03PacketPlayer$C04PacketPlayerPosition.processPacket(C03PacketPlayer.java:163)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.world.gen.MapGenCaves.isTopBlock(MapGenCaves.java:259)
+	at net.minecraft.world.gen.MapGenCaves.func_151541_a(MapGenCaves.java:179)
+	at net.minecraft.world.gen.MapGenCaves.func_151538_a(MapGenCaves.java:235)
+	at net.minecraft.world.gen.MapGenBase.func_151539_a(MapGenBase.java:33)
+	at net.minecraft.world.gen.ChunkProviderGenerate.provideChunk(ChunkProviderGenerate.java:232)
+
+-- Chunk to be generated --
+Details:
+	Location: -26,3
+	Position hash: 17179869158
+	Generator: RandomLevelSource
+Stacktrace:
+	at net.minecraft.world.gen.ChunkProviderServer.originalLoadChunk(ChunkProviderServer.java:190)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:149)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:119)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:221)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:482)
+
+-- Requested block coordinates --
+Details:
+	Found chunk: true
+	Location: World: (-416,255,48), Chunk: (at 0,15,0 in -26,3; contains blocks -416,0,48 to -401,255,63), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.world.World.getBlock(World.java:387)
+	at com.thearclightcrusader.ArcCore.dimensions.TeleporterFairy.placeInExistingPortal(TeleporterFairy.java:127)
+	at com.thearclightcrusader.ArcCore.dimensions.TeleporterFairy.placeInPortal(TeleporterFairy.java:52)
+	at net.minecraft.server.management.ServerConfigurationManager.transferEntityToWorld(ServerConfigurationManager.java:638)
+	at net.minecraft.server.management.ServerConfigurationManager.transferPlayerToDimension(ServerConfigurationManager.java:542)
+	at com.thearclightcrusader.ArcCore.dimensions.FairyPortal.onEntityCollidedWithBlock(FairyPortal.java:93)
+
+-- Block being collided with --
+Details:
+	Block type: ID #235 (tile.null // com.thearclightcrusader.ArcCore.dimensions.FairyPortal)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-289,88,177), Chunk: (at 15,5,1 in -19,11; contains blocks -304,0,176 to -289,255,191), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.entity.Entity.func_145775_I(Entity.java:962)
+
+-- Entity being checked for collision --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 149
+	Entity Name: Player406
+	Entity's Exact location: -288.00, 88.00, 176.00
+	Entity's Block location: World: (-288,88,176), Chunk: (at 0,5,0 in -18,11; contains blocks -288,0,176 to -273,255,191), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+Stacktrace:
+	at net.minecraft.entity.Entity.moveEntity(Entity.java:895)
+	at net.minecraft.network.NetHandlerPlayServer.processPlayer(NetHandlerPlayServer.java:367)
+	at net.minecraft.network.play.client.C03PacketPlayer.processPacket(C03PacketPlayer.java:37)
+	at net.minecraft.network.play.client.C03PacketPlayer$C04PacketPlayerPosition.processPacket(C03PacketPlayer.java:163)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@3a01c115
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_31, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 745000920 bytes (710 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	arccore{1.0.1} [arccore] (bin) 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player406'/149, l='New World', x=-288.00, y=88.00, z=176.00]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

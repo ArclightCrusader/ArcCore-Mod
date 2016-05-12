@@ -1,0 +1,7 @@
+package com.thearclightcrusader.ArcCore.dimensions;
+
+import net.minecraft.world.WorldProvider;
+
+public class WorldProviderFairy extends WorldProvider{
+
+}

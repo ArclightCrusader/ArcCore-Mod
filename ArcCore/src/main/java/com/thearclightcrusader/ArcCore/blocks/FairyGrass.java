@@ -14,7 +14,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 
-public class FairyGrass extends Block{
+public class FairyGrass extends BlockGrass{
 
     @SideOnly(Side.CLIENT)
     private IIcon icon1;
@@ -24,7 +24,7 @@ public class FairyGrass extends Block{
     private IIcon icon3;
     
 	public FairyGrass(Material grass) {
-		super(Material.grass);
+		super();
 		this.setHardness(1F);
 		this.setResistance(1F);
 		this.setStepSound(soundTypeGrass);
